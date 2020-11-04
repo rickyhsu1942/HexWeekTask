@@ -1,5 +1,352 @@
 @import'common';
+// container
 .container {
-    width: 1110px;
+    max-width: 1110px;
     margin: 0 auto;
+    @include mdScreen {
+        max-width: 768px;
+    }
+    @include smScreen {
+        max-width: 344.5px;
+    }
+}
+
+// header
+.header {
+    height: 108px;
+    &--bgPrimaryColor {
+        background-color: $primaryColor;
+    }
+    &--flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &--mp {
+        padding-left: 88px;
+        padding-right: 88px;
+    }
+    @include mdScreen {
+        &--mp {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+    @include smScreen {
+        height: auto;
+        &__logo {
+            height: 29.14px;
+            &--mp {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+        &--flex {
+            flex-direction: column;
+        }
+        &--mp {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+}
+
+.headerNav {
+    &--flex {
+        display: flex;
+    }
+    &__link {
+        &--font {
+            color: $white;
+            font-size: 20px;
+            line-height: 1.4;
+        }
+        &--mp {
+            margin-left: 64px;
+        }
+    }
+    @include mdScreen {
+        &__link {
+            &--mp {
+                margin-left: 40px;
+            }
+        }
+    }
+    @include smScreen {
+        width: 100%;
+        &__item {
+            width: 50%;
+            border: 1px solid $white;
+            text-align: center;
+        }
+        &--flex {
+            flex-wrap: wrap;
+        }
+        &__link {
+            display: block;
+            &--mp {
+                margin-left: 0px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+        }
+    }
+}
+
+// footer
+.footer {
+    &--bgPrimaryColor {
+        background-color: $primaryColor;
+    }
+    &--mp {
+        padding-top: 48px;
+        padding-bottom: 28.43px;
+    }
+    @include mdScreen {
+        &--mp {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+    @include smScreen {
+        &--mp {
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+    }
+}
+
+.footerNav {
+    &--flex {
+        display: flex;
+    }
+    &--mp {
+        margin-bottom: 32px;
+    }
+    &__link {
+        &--font {
+            color: $white;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        &--mp {
+            margin-right: 48px;
+        }
+    }
+    @include mdScreen {
+        &--mp {
+            margin-bottom: 24px;
+        }
+        &__link {
+            &--mp {
+                margin-right: 40px;
+            }
+        }
+    }
+    @include smScreen {
+        display: none;
+    }
+}
+
+.footerSocials {
+    &--flex {
+        display: flex;
+    }
+    &--absolute {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &__item {
+        &--mp {
+            margin-left: 32px;
+        }
+    }
+    @include mdScreen {
+        &__item {
+            &--mp {
+                margin-left: 24px;
+            }
+        }
+        &__icon {
+            height: 24px;
+        }
+    }
+}
+
+.footerContacts {
+    &--mp {
+        margin-bottom: 24px;
+    }
+    &__telIcon {
+        height: 38px;
+        &--mp {
+            margin-left: 3px;
+            margin-right: 17px;
+        }
+    }
+    &__mailIcon {
+        height: 44px;
+        &--mp {
+            margin-right: 14px;
+        }
+    }
+    &__item {
+        &--mp {
+            margin-bottom: 24px;
+        }
+    }
+    &__link {
+        &--font {
+            font-family: 'Roboto', sans-serif;
+            font-size: 36px;
+            line-height: 48px;
+            color: $white;
+        }
+    }
+    @include mdScreen {
+        &--mp {
+            margin-bottom: 28px;
+        }
+        &__telIcon {
+            height: 18px;
+            &--mp {
+                margin-left: 5px;
+                margin-right: 15px;
+            }
+        }
+        &__mailIcon {
+            height: 28px;
+            &--mp {
+                margin-right: 10px;
+            }
+        }
+        &__item {
+            &--mp {
+                margin-bottom: 16px;
+            }
+        }
+        &__link {
+            &--font {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+    @include smScreen {
+        &--mp {
+            margin-bottom: 24px;
+        }
+        &__telIcon {
+            height: 14px;
+            &--mp {
+                margin-left: 1px;
+                margin-right: 8px;
+            }
+        }
+        &__mailIcon {
+            height: 16px;
+            &--mp {
+                margin-right: 7px;
+            }
+        }
+        &__item {
+            &--mp {
+                margin-bottom: 12px;
+            }
+        }
+        &__link {
+            &--font {
+                font-size: 16px;
+                line-height: 21px;
+            }
+        }
+    }
+}
+
+.footerBottom {
+    border-top: 1px solid $white;
+    &--mp {
+        padding-top: 24px;
+    }
+    &--flex {
+        display: flex;
+        align-items: center;
+    }
+    &__logo {
+        &--mp {
+            margin-right: 38px;
+        }
+    }
+    @include mdScreen {
+        &__logo {
+            display: none;
+        }
+    }
+    @include smScreen {
+        &__logo {
+            height: 27.93px;
+            display: block;
+            &--mp {
+                margin-right: 0px;
+            }
+            &--absolute {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+.bottomFonts {
+    width: 992px;
+    &--flex {
+        display: flex;
+    }
+    &__item {
+        &--marginAuto {
+            margin-right: auto;
+        }
+    }
+    &__copyright {
+        &--font {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: $white;
+        }
+    }
+    &__link {
+        &--font {
+            font-size: 14px;
+            line-height: 20px;
+            color: $white;
+        }
+        &--mp {
+            margin-left: 62px;
+        }
+    }
+    @include mdScreen {
+        &__link {
+            &--mp {
+                margin-left: 24px;
+            }
+        }
+    }
+    @include smScreen {
+        &--flex {
+            flex-direction: column;
+        }
+        &__item {
+            &--mp {
+                margin-bottom: 8px;
+            }
+        }
+        &__link {
+            &--mp {
+                margin-left: 0px;
+            }
+        }
+    }
 }
