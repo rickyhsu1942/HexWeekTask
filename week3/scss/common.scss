@@ -1,0 +1,34 @@
+$primaryColor:#AA0601;
+$white: #ffffff;
+$black: #000000;
+@mixin mdScreen {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin smScreen {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Noto Sans', serif;
+}

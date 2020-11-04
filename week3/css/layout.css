@@ -1,0 +1,26 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Noto Sans', serif;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=layout.css.map */
