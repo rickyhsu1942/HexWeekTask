@@ -1,0 +1,10 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: 'Roboto', 'Regular', sans-serif;
+    font-size: 80px;
+    line-height: 94px;
+}

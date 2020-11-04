@@ -1,0 +1,331 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.content-title {
+    font-size: 80px;
+    line-height: 95px;
+    padding-bottom: 24px;
+    margin-bottom: 48px;
+    border-bottom: 5px solid #696969;
+}
+
+.content-titlePhoto {
+    margin-bottom: 48px;
+}
+
+.profile-title {
+    font-weight: bold;
+    font-family: PingFangTC-Medium, sans-serif;
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 12px;
+    border-bottom: 4px solid #D1D1D1;
+}
+
+.profile-title span {
+    font-size: 24px;
+    line-height: 29px;
+    color: #A00404;
+}
+
+.profile-contentList {
+    font-family: PingFangTC-Light, sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 24px;
+}
+
+.profile-contentList li {
+    margin-bottom: 24px;
+}
+
+.education-title {
+    font-weight: bold;
+    font-family: PingFangTC-Medium, sans-serif;
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 12px;
+    border-bottom: 4px solid #D1D1D1;
+}
+
+.education-title span {
+    font-size: 24px;
+    line-height: 29px;
+    color: #A00404;
+}
+
+.education-contentList {
+    font-family: PingFangTC-Light, sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 24px;
+}
+
+.skills {
+    background-color: #415165;
+    padding: 24px 96px 52px 96px;
+    margin-bottom: 72px;
+}
+
+.skills-title {
+    text-align: center;
+    font-family: PingFangTC-Medium, sans-serif;
+    font-size: 32px;
+    line-height: 45px;
+    font-weight: bold;
+    color: #ffffff;
+    border-bottom: 3px solid #9FA7B1;
+    margin-bottom: 12px;
+}
+
+.skills-title span {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.skills-content-list {
+    display: table;
+    margin: 0 auto 0 auto;
+    border-left: 3px solid #9FA7B1;
+    padding-left: 20px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #9FA7B1;
+}
+
+.skills-content-list li {
+    margin-bottom: 20px;
+}
+
+.workExperience-title {
+    font-weight: bold;
+    font-family: PingFangTC-Medium, sans-serif;
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 12px;
+    border-bottom: 4px solid #D1D1D1;
+}
+
+.workExperience-title span {
+    font-size: 24px;
+    line-height: 29px;
+    color: #A00404;
+}
+
+.workExperience-contentList {
+    margin-left: 24px;
+    padding-left: 24px;
+    border-left: 3px solid #9FA7B1;
+    margin-bottom: 24px;
+}
+
+.workExperience-contentList-title {
+    font-weight: bold;
+    font-family: PingFangTC-Medium, sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 8px;
+}
+
+.workExperience-contentList li {
+    margin-bottom: 32px;
+}
+
+.workExperience-contentList p {
+    max-width: 642px;
+    font-family: PingFangTC-Light, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 32px;
+}
+
+.footer {
+    background-color: #415165;
+    padding: 24px 96px 48px 96px;
+}
+
+.contactMethod {
+    text-align: center;
+    color: #ffffff;
+}
+
+.contactMethod-title {
+    font-weight: bold;
+    font-family: PingFangTC-Medium, sans-serif;
+    font-size: 32px;
+    line-height: 45px;
+    border-bottom: 3px solid #9FA7B1;
+    margin-bottom: 32px;
+}
+
+.contactMethod-title span {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.contactMethod-contentList {
+    font-family: PingFangTC-Light, sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.contactMethod-contentList li {
+    margin-bottom: 16px;
+}
+
+.contactMethod-contentList a {
+    color: #ffffff;
+}
+
+.contactMethod-contentList a:hover {
+    color: #9FA7B1;
+}
+
+.social {
+    margin-top: 4px;
+    padding-right: 24px;
+}
