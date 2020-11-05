@@ -46,11 +46,6 @@ body {
   height: 840px;
 }
 
-.banner--mp {
-  padding-top: 350px;
-  padding-right: 20%;
-}
-
 .banner--bgi {
   background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true);
   background-size: cover;
@@ -59,10 +54,6 @@ body {
 }
 
 @media (max-width: 992px) {
-  .banner--mp {
-    padding-top: 400px;
-    padding-right: 5%;
-  }
   .banner--bgi {
     background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true);
   }
@@ -72,10 +63,10 @@ body {
   .banner {
     height: 394px;
   }
-  .banner--mp {
-    padding-top: 164px;
-    padding-right: 4%;
-  }
+}
+
+.bannerFont {
+  height: inherit;
 }
 
 .bannerFont--flex {
@@ -86,6 +77,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
