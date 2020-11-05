@@ -91,6 +91,18 @@
         padding-top: 64px;
         padding-bottom: 80px;
     }
+    @include mdScreen {
+        &--mp {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+    @include smScreen {
+        &--mp {
+            padding-top: 32px;
+            padding-bottom: 12px;
+        }
+    }
 }
 
 .introductionTitle {
@@ -102,6 +114,24 @@
     }
     &--mp {
         margin-bottom: 60px;
+    }
+    @include mdScreen {
+        &--font {
+            font-size: 32px;
+            line-height: 45px;
+        }
+        &--mp {
+            margin-bottom: 32px;
+        }
+    }
+    @include smScreen {
+        &--font {
+            font-size: 24px;
+            line-height: 33px;
+        }
+        &--mp {
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -118,6 +148,9 @@
     }
     &__item {
         width: 20%;
+        &--flexOrder {
+            order: -1;
+        }
     }
     &__title {
         &--font {
@@ -137,6 +170,47 @@
         &--font {
             font-size: 16px;
             line-height: 24px;
+        }
+    }
+    @include mdScreen {
+        &--flex {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        &__item {
+            width: 34%;
+            &--flexOrder {
+                order: 0;
+            }
+            &--mp {
+                margin-bottom: 40px;
+            }
+        }
+        &__iconContainer {
+            height: 80px;
+            &--mp {
+                margin-bottom: 16px;
+            }
+            &__icon {
+                height: 80%;
+            }
+        }
+        &__title {
+            &--font {
+                font-size: 20px;
+                line-height: 28px;
+            }
+            &--mp {
+                margin-bottom: 8px;
+            }
+        }
+    }
+    @include smScreen {
+        &--flex {
+            justify-content: center;
+        }
+        &__item {
+            width: 76.63%;
         }
     }
 }

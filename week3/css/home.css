@@ -139,6 +139,20 @@ body {
   padding-bottom: 80px;
 }
 
+@media (max-width: 992px) {
+  .introduction--mp {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .introduction--mp {
+    padding-top: 32px;
+    padding-bottom: 12px;
+  }
+}
+
 .introductionTitle--font {
   font-size: 48px;
   font-weight: bold;
@@ -148,6 +162,26 @@ body {
 
 .introductionTitle--mp {
   margin-bottom: 60px;
+}
+
+@media (max-width: 992px) {
+  .introductionTitle--font {
+    font-size: 32px;
+    line-height: 45px;
+  }
+  .introductionTitle--mp {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .introductionTitle--font {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .introductionTitle--mp {
+    margin-bottom: 20px;
+  }
 }
 
 .introductionLists--flex {
@@ -171,6 +205,12 @@ body {
   width: 20%;
 }
 
+.introductionLists__item--flexOrder {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
 .introductionLists__title--font {
   color: #650300;
   font-size: 24px;
@@ -189,5 +229,52 @@ body {
 .introductionLists__article--font {
   font-size: 16px;
   line-height: 24px;
+}
+
+@media (max-width: 992px) {
+  .introductionLists--flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .introductionLists__item {
+    width: 34%;
+  }
+  .introductionLists__item--flexOrder {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .introductionLists__item--mp {
+    margin-bottom: 40px;
+  }
+  .introductionLists__iconContainer {
+    height: 80px;
+  }
+  .introductionLists__iconContainer--mp {
+    margin-bottom: 16px;
+  }
+  .introductionLists__iconContainer__icon {
+    height: 80%;
+  }
+  .introductionLists__title--font {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .introductionLists__title--mp {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .introductionLists--flex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .introductionLists__item {
+    width: 76.63%;
+  }
 }
 /*# sourceMappingURL=home.css.map */
