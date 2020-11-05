@@ -14,8 +14,8 @@
 // header
 .header {
     height: 108px;
-    &--bgPrimaryColor {
-        background-color: $primaryColor;
+    &--bgc {
+        background-color: $secondaryColor;
     }
     &--flex {
         display: flex;
@@ -95,8 +95,8 @@
 
 // footer
 .footer {
-    &--bgPrimaryColor {
-        background-color: $primaryColor;
+    &--bgc {
+        background-color: $secondaryColor;
     }
     &--mp {
         padding-top: 48px;

@@ -1,0 +1,142 @@
+@import'common';
+// banner
+.banner {
+    height: 840px;
+    &--mp {
+        padding-top: 350px;
+        padding-right: 20%;
+    }
+    &--bgi {
+        background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    @include mdScreen {
+        &--mp {
+            padding-top: 400px;
+            padding-right: 5%;
+        }
+        &--bgi {
+            background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true);
+        }
+    }
+    @include smScreen {
+        height: 394px;
+        &--mp {
+            padding-top: 164px;
+            padding-right: 4%;
+        }
+    }
+}
+
+.bannerFont {
+    &--flex {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    &__mainTitle {
+        &--font {
+            color: $primaryColor;
+            font-size: 64px;
+            font-weight: bold;
+            line-height: 90px;
+        }
+    }
+    &__tinyTitle {
+        display: block;
+        &--font {
+            color: $primaryColor;
+            font-size: 36px;
+            line-height: 50px;
+        }
+    }
+    @include mdScreen {
+        &__mainTitle {
+            &--font {
+                font-size: 48px;
+                line-height: 67px;
+            }
+        }
+        &__tinyTitle {
+            &--font {
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+    }
+    @include smScreen {
+        &__mainTitle {
+            &--font {
+                font-size: 32px;
+                line-height: 45px;
+            }
+        }
+        &__tinyTitle {
+            &--font {
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+// introduction
+.introduction {
+    &--text {
+        text-align: center;
+    }
+    &--mp {
+        padding-top: 64px;
+        padding-bottom: 80px;
+    }
+}
+
+.introductionTitle {
+    &--font {
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 67px;
+        color: $primaryColor;
+    }
+    &--mp {
+        margin-bottom: 60px;
+    }
+}
+
+.introductionLists {
+    &--flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__iconContainer {
+        height: 100px;
+        &--mp {
+            margin-bottom: 40px;
+        }
+    }
+    &__item {
+        width: 20%;
+    }
+    &__title {
+        &--font {
+            color: $primaryColor;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 36px;
+        }
+        &--mp {
+            margin-bottom: 4px;
+        }
+    }
+    &__article {
+        &--text {
+            text-align: left;
+        }
+        &--font {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
