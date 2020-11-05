@@ -128,16 +128,15 @@
 .introductionLists {
     &--flex {
         display: flex;
+        align-items: baseline;
         justify-content: space-between;
     }
-    &__iconContainer {
-        height: 100px;
+    &__icon {
         &--mp {
             margin-bottom: 40px;
         }
     }
     &__item {
-        width: 20%;
         &--flexOrder {
             order: -1;
         }
@@ -154,6 +153,10 @@
         }
     }
     &__article {
+        max-width: 208px;
+        &--mp {
+            margin: 0 auto;
+        }
         &--text {
             text-align: left;
         }
@@ -176,13 +179,10 @@
                 margin-bottom: 40px;
             }
         }
-        &__iconContainer {
-            height: 80px;
+        &__icon {
+            height: 80%;
             &--mp {
                 margin-bottom: 16px;
-            }
-            &__icon {
-                height: 80%;
             }
         }
         &__title {
@@ -193,6 +193,9 @@
             &--mp {
                 margin-bottom: 8px;
             }
+        }
+        &__article {
+            max-width: 237px;
         }
     }
     @include smScreen {
