@@ -40,3 +40,9 @@ body {
 .relative {
     position: relative;
 }
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
