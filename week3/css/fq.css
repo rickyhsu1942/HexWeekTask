@@ -54,7 +54,7 @@ body {
 
 @media (max-width: 767px) {
   .container {
-    max-width: 344.5px;
+    max-width: 345px;
   }
 }
 
@@ -126,12 +126,16 @@ body {
 }
 
 .headerNav__link--mp {
-  margin-left: 64px;
+  padding: 10px 32px;
+}
+
+.headerNav__link--mp:hover {
+  background-color: #650300;
 }
 
 @media (max-width: 992px) {
   .headerNav__link--mp {
-    margin-left: 40px;
+    padding: 10px 20px;
   }
 }
 
@@ -198,7 +202,11 @@ body {
 }
 
 .footerNav__link--mp {
-  margin-right: 48px;
+  padding: 0px 24px;
+}
+
+.footerNav__link--mp:hover {
+  background-color: #650300;
 }
 
 @media (max-width: 992px) {
@@ -206,7 +214,7 @@ body {
     margin-bottom: 24px;
   }
   .footerNav__link--mp {
-    margin-right: 40px;
+    padding: 0px 20px;
   }
 }
 

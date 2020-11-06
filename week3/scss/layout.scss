@@ -7,7 +7,7 @@
         max-width: 768px;
     }
     @include smScreen {
-        max-width: 344.5px;
+        max-width: 345px;
     }
 }
 
@@ -62,13 +62,16 @@
             line-height: 1.4;
         }
         &--mp {
-            margin-left: 64px;
+            padding: 10px 32px;
+            &:hover {
+                background-color: $primaryColor;
+            }
         }
     }
     @include mdScreen {
         &__link {
             &--mp {
-                margin-left: 40px;
+                padding: 10px 20px;
             }
         }
     }
@@ -130,7 +133,10 @@
             line-height: 1.5;
         }
         &--mp {
-            margin-right: 48px;
+            padding: 0px 24px;
+            &:hover {
+                background-color: $primaryColor;
+            }
         }
     }
     @include mdScreen {
@@ -139,7 +145,7 @@
         }
         &__link {
             &--mp {
-                margin-right: 40px;
+                padding: 0px 20px;
             }
         }
     }
