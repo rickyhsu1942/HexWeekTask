@@ -1,21 +1,19 @@
-@import'layout';
-// banner
-$bannerHeignt:304px;
-$bannerHeigntAtSmScreen: 143px;
-.banner {
-    height: $bannerHeignt;
-    &--bgi {
+
+// fqBanner
+.fqBanner {
+    height: 304px;
+    &--bgImage {
         background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/qa.png?raw=true);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
     @include smScreen {
-        height: $bannerHeigntAtSmScreen;
+        height: 143px;
     }
 }
 
-.bannerContent {
+.fqBannerContent {
     height: inherit;
     &--flex {
         display: flex;

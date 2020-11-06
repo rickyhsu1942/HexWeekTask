@@ -1,15 +1,15 @@
-@import'layout';
-// banner
-.banner {
+
+// homeBanner
+.homeBanner {
     height: 840px;
-    &--bgi {
+    &--bgImage {
         background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
     @include mdScreen {
-        &--bgi {
+        &--bgImage {
             background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true);
         }
     }
@@ -18,7 +18,7 @@
     }
 }
 
-.bannerFont {
+.homeBannerFont {
     height: inherit;
     &--flex {
         display: flex;
@@ -349,5 +349,12 @@
         &__lightIcon {
             display: inline;
         }
+    }
+}
+
+// coBranding
+.coBranding {
+    &--bgImage {
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/bg.png);
     }
 }

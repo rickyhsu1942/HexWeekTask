@@ -1,4 +1,4 @@
-@import'common';
+
 // container
 .container {
     max-width: 1110px;
@@ -14,7 +14,7 @@
 // header
 .header {
     height: 108px;
-    &--bgc {
+    &--bgColor {
         background-color: $secondaryColor;
     }
     &--flex {
@@ -98,7 +98,7 @@
 
 // footer
 .footer {
-    &--bgc {
+    &--bgColor {
         background-color: $secondaryColor;
     }
     &--mp {
