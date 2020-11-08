@@ -31,6 +31,14 @@
       font-size: 64px;
       font-weight: bold;
       line-height: 90px;
+      @include mdScreen {
+        font-size: 48px;
+        line-height: 67px;
+      }
+      @include smScreen {
+        font-size: 32px;
+        line-height: 45px;
+      }
     }
   }
   &__tinyTitle {
@@ -39,31 +47,11 @@
       color: $primaryColor;
       font-size: 36px;
       line-height: 50px;
-    }
-  }
-  @include mdScreen {
-    &__mainTitle {
-      &--font {
-        font-size: 48px;
-        line-height: 67px;
-      }
-    }
-    &__tinyTitle {
-      &--font {
+      @include mdScreen {
         font-size: 20px;
         line-height: 28px;
       }
-    }
-  }
-  @include smScreen {
-    &__mainTitle {
-      &--font {
-        font-size: 32px;
-        line-height: 45px;
-      }
-    }
-    &__tinyTitle {
-      &--font {
+      @include smScreen {
         font-size: 16px;
         line-height: 22px;
       }
@@ -79,15 +67,11 @@
   &--mp {
     padding-top: 64px;
     padding-bottom: 80px;
-  }
-  @include mdScreen {
-    &--mp {
+    @include mdScreen {
       padding-top: 40px;
       padding-bottom: 40px;
     }
-  }
-  @include smScreen {
-    &--mp {
+    @include smScreen {
       padding-top: 32px;
       padding-bottom: 12px;
     }
@@ -100,25 +84,21 @@
     font-weight: bold;
     line-height: 67px;
     color: $primaryColor;
-  }
-  &--mp {
-    margin-bottom: 60px;
-  }
-  @include mdScreen {
-    &--font {
+    @include mdScreen {
       font-size: 32px;
       line-height: 45px;
     }
-    &--mp {
-      margin-bottom: 32px;
-    }
-  }
-  @include smScreen {
-    &--font {
+    @include smScreen {
       font-size: 24px;
       line-height: 33px;
     }
-    &--mp {
+  }
+  &--mp {
+    margin-bottom: 60px;
+    @include mdScreen {
+      margin-bottom: 32px;
+    }
+    @include smScreen {
       margin-bottom: 20px;
     }
   }
@@ -129,15 +109,40 @@
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    @include mdScreen {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    @include smScreen {
+      justify-content: center;
+    }
   }
   &__icon {
+    @include mdScreen {
+      height: 80%;
+    }
     &--mp {
       margin-bottom: 40px;
+      @include mdScreen {
+        margin-bottom: 16px;
+      }
     }
   }
   &__item {
+    @include mdScreen {
+      width: 34%;
+      &--mp {
+        margin-bottom: 40px;
+      }
+    }
+    @include smScreen {
+      width: 76.63%;
+    }
     &--flexOrder {
       order: -1;
+      @include mdScreen {
+        order: 0;
+      }
     }
   }
   &__title {
@@ -146,13 +151,23 @@
       font-size: 24px;
       font-weight: bold;
       line-height: 36px;
+      @include mdScreen {
+        font-size: 20px;
+        line-height: 28px;
+      }
     }
     &--mp {
       margin-bottom: 4px;
+      @include mdScreen {
+        margin-bottom: 8px;
+      }
     }
   }
   &__article {
     max-width: 208px;
+    @include mdScreen {
+      max-width: 237px;
+    }
     &--mp {
       margin: 0 auto;
     }
@@ -164,47 +179,6 @@
       line-height: 24px;
     }
   }
-  @include mdScreen {
-    &--flex {
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-    &__item {
-      width: 34%;
-      &--flexOrder {
-        order: 0;
-      }
-      &--mp {
-        margin-bottom: 40px;
-      }
-    }
-    &__icon {
-      height: 80%;
-      &--mp {
-        margin-bottom: 16px;
-      }
-    }
-    &__title {
-      &--font {
-        font-size: 20px;
-        line-height: 28px;
-      }
-      &--mp {
-        margin-bottom: 8px;
-      }
-    }
-    &__article {
-      max-width: 237px;
-    }
-  }
-  @include smScreen {
-    &--flex {
-      justify-content: center;
-    }
-    &__item {
-      width: 76.63%;
-    }
-  }
 }
 
 // classic
@@ -212,6 +186,14 @@
   &--mp {
     padding-top: 64px;
     padding-bottom: 48px;
+    @include mdScreen {
+      padding-top: 40px;
+      padding-bottom: 32px;
+    }
+    @include smScreen {
+      padding-top: 32px;
+      padding-bottom: 24px;
+    }
   }
   &--text {
     text-align: center;
@@ -222,37 +204,21 @@
       font-weight: bold;
       line-height: 67px;
       color: $primaryColor;
-    }
-    &--mp {
-      margin-bottom: 60px;
-    }
-  }
-  @include mdScreen {
-    &--mp {
-      padding-top: 40px;
-      padding-bottom: 32px;
-    }
-    &__title {
-      &--font {
+      @include mdScreen {
         font-size: 32px;
         line-height: 45px;
       }
-      &--mp {
-        margin-bottom: 32px;
-      }
-    }
-  }
-  @include smScreen {
-    &--mp {
-      padding-top: 32px;
-      padding-bottom: 24px;
-    }
-    &__title {
-      &--font {
+      @include smScreen {
         font-size: 20px;
         line-height: 28px;
       }
-      &--mp {
+    }
+    &--mp {
+      margin-bottom: 60px;
+      @include mdScreen {
+        margin-bottom: 32px;
+      }
+      @include smScreen {
         margin-bottom: 20px;
       }
     }
@@ -261,33 +227,62 @@
 
 .classicLists {
   &__item {
+    @include smScreen {
+        width: 100%;
+        position: relative;
+    }
     &--flex {
       display: flex;
       align-items: center;
     }
     &--flexReverse {
       flex-direction: row-reverse;
+      @include mdScreen {
+        flex-direction: row;
+      }
     }
     &--mp {
       margin-bottom: 32px;
+      @include mdScreen {
+        margin-bottom: 8px;
+      }
     }
   }
   &__photo {
     max-width: 635px;
+    @include mdScreen {
+      max-width: 390px;
+    }
+    @include smScreen {
+        max-width: 100%;}
   }
   &__title {
+    @include smScreen {
+        position: absolute;
+        left: 0;
+        right: 0;}
     &--font {
       font-size: 48px;
       font-weight: bold;
       font-style: italic;
       line-height: 63px;
       color: $secondaryColor;
+      @include mdScreen {
+        font-size: 28px;
+        line-height: 37px;
+      }
+      @include smScreen {
+        color: $white;}
     }
     &--mp {
       margin: 0px 30px;
+      @include smScreen {
+        margin: 0 auto;}
     }
   }
   &__primaryIcon {
+    @include smScreen {
+        display: none;}
     &--mp {
       margin-right: 8px;
     }
@@ -297,6 +292,8 @@
   }
   &__lightIcon {
     display: none;
+    @include smScreen {
+        display: inline;}
     &--mp {
       margin-right: 8px;
     }
@@ -304,51 +301,7 @@
       vertical-align: middle;
     }
   }
-  @include mdScreen {
-    &__item {
-      &--flexReverse {
-        flex-direction: row;
-      }
-      &--mp {
-        margin-bottom: 8px;
-      }
-    }
-    &__photo {
-      max-width: 390px;
-    }
-    &__title {
-      &--font {
-        font-size: 28px;
-        line-height: 37px;
-      }
-    }
-  }
-  @include smScreen {
-    &__item {
-      width: 100%;
-      position: relative;
-    }
-    &__photo {
-      max-width: 100%;
-    }
-    &__title {
-      position: absolute;
-      left: 0;
-      right: 0;
-      &--font {
-        color: $white;
-      }
-      &--mp {
-        margin: 0 auto;
-      }
-    }
-    &__primaryIcon {
-      display: none;
-    }
-    &__lightIcon {
-      display: inline;
-    }
-  }
+
 }
 
 // coBranding
@@ -527,7 +480,9 @@
     @include mdScreen {
       margin-bottom: 32px;
     }
-    @include smScreen {margin-bottom: 20px;}
+    @include smScreen {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -545,7 +500,7 @@
       width: 47.8%;
     }
     @include smScreen {
-        width: 100%;
+      width: 100%;
     }
   }
   &__headShot {
@@ -562,7 +517,7 @@
         margin-bottom: 28px;
       }
       @include smScreen {
-          margin-bottom: 16px;
+        margin-bottom: 16px;
       }
     }
     &__title {
@@ -594,6 +549,164 @@
         font-size: 14px;
         line-height: 19px;
         color: #707070;
+      }
+    }
+  }
+}
+
+// contantUs
+.contantUs {
+  &--mp {
+    padding-top: 64px;
+    padding-bottom: 80px;
+    @include mdScreen {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    @include smScreen {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+}
+
+.contantUsTitle {
+  &--font {
+    font-size: 48px;
+    line-height: 67px;
+    font-weight: bold;
+    @include mdScreen {
+      font-size: 32px;
+      line-height: 45px;
+    }
+    @include smScreen {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+  &--text {
+    text-align: center;
+  }
+  &--mp {
+    margin-bottom: 24px;
+    @include mdScreen {
+      margin-bottom: 16px;
+    }
+    @include smScreen {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.contantUsInfo {
+  max-width: 730px;
+  margin: 0 auto;
+  @include mdScreen {
+    max-width: 450px;
+  }
+  @include smScreen {
+    max-width: 345px;
+  }
+  &__article {
+    &--font {
+      font-size: 20px;
+      line-height: 30px;
+      @include mdScreen {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+    &--mp {
+      margin-bottom: 20px;
+      @include mdScreen {
+        margin-bottom: 12px;
+      }
+      @include smScreen {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+.contantUsInfo__form {
+  &__submit {
+    width: 350px;
+    height: 54px;
+    border: none;
+    @include mdScreen {
+      width: 210px;
+      height: 36px;
+    }
+    @include smScreen {
+      width: 165px;
+    }
+    &--bgColor {
+      background-color: $secondaryColor;
+    }
+    &--font {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 22px;
+      color: $white;
+      @include mdScreen {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+.contantUsInputList {
+  &--mp {
+    margin-bottom: 24px;
+    @include mdScreen {
+      margin-bottom: 20px;
+    }
+    @include smScreen {
+      margin-bottom: 24px;
+    }
+  }
+  &__item {
+    &--mp {
+      margin-bottom: 16px;
+      @include mdScreen {
+        margin-bottom: 8px;
+      }
+    }
+  }
+  &__label {
+    &--d-block {
+      display: block;
+    }
+    &--font {
+      font-size: 16px;
+      line-height: 22px;
+      @include mdScreen {
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+    &--mp {
+      margin-bottom: 4px;
+      @include mdScreen {
+        margin-bottom: 2px;
+      }
+    }
+  }
+  &__textInput {
+    width: 100%;
+    &--font {
+      font-size: 16px;
+      line-height: 22px;
+      @include mdScreen {
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+    &--mp {
+      padding: 14px 0px 14px 16px;
+      @include mdScreen {
+        padding: 8px 0px 8px 12px;
       }
     }
   }

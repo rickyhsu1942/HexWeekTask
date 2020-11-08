@@ -1,54 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 // device size
 @mixin mdScreen {
-    @media (max-width: 992px) {
-        @content;
-    }
+  @media (max-width: 992px) {
+    @content;
+  }
 }
 
 @mixin smScreen {
-    @media (max-width: 767px) {
-        @content;
-    }
+  @media (max-width: 767px) {
+    @content;
+  }
 }
 
 // element
 *,
 *:before,
 *:after {
-    box-sizing: border-box
+  box-sizing: border-box;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 body {
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
 }
 
 // background
 .lightTheme {
-    &--bgColor {
-        background-color: $lightColor;
-    }
+  &--bgColor {
+    background-color: $lightColor;
+  }
+}
+
+// text
+.textCenter {
+  text-align: center;
 }
 
 // relative
 .relative {
-    position: relative;
+  position: relative;
 }
 
 // flex
 .flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
