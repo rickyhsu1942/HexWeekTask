@@ -1115,6 +1115,55 @@ body {
       .contantUsInputList__textInput--mp {
         padding: 8px 0px 8px 12px; } }
 
+.storeBanner {
+  height: 304px; }
+  @media (max-width: 767px) {
+    .storeBanner {
+      height: 143px; } }
+  .storeBanner--bgImage {
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/qa.png?raw=true);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+
+.storeBannerContent {
+  height: inherit; }
+  .storeBannerContent--flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+  .storeBannerContent__title--font {
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 90px; }
+    @media (max-width: 992px) {
+      .storeBannerContent__title--font {
+        font-size: 48px;
+        line-height: 67px; } }
+    @media (max-width: 767px) {
+      .storeBannerContent__title--font {
+        font-size: 28px;
+        line-height: 40px; } }
+  .storeBannerContent__title--mp {
+    margin-right: 24px; }
+    @media (max-width: 992px) {
+      .storeBannerContent__title--mp {
+        margin-right: 16px; } }
+    @media (max-width: 767px) {
+      .storeBannerContent__title--mp {
+        margin-right: 8px; } }
+  .storeBannerContent__fqIcon {
+    height: 58px; }
+    @media (max-width: 992px) {
+      .storeBannerContent__fqIcon {
+        height: 48px; } }
+    @media (max-width: 767px) {
+      .storeBannerContent__fqIcon {
+        height: 24px; } }
+
 .fqBanner {
   height: 304px; }
   @media (max-width: 767px) {

@@ -1,0 +1,55 @@
+// storeBanner
+.storeBanner {
+  height: 304px;
+  @include smScreen {
+    height: 143px;
+  }
+  &--bgImage {
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/qa.png?raw=true);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+
+.storeBannerContent {
+  height: inherit;
+  &--flex {
+    display: flex;
+    align-items: flex-end;
+  }
+  &__title {
+    &--font {
+      font-size: 64px;
+      font-weight: bold;
+      line-height: 90px;
+      @include mdScreen {
+        font-size: 48px;
+        line-height: 67px;
+      }
+      @include smScreen {
+        font-size: 28px;
+        line-height: 40px;
+      }
+    }
+    &--mp {
+      margin-right: 24px;
+      @include mdScreen {
+        margin-right: 16px;
+      }
+      @include smScreen {
+        margin-right: 8px;
+      }
+    }
+  }
+  &__fqIcon {
+    height: 58px;
+    @include mdScreen {
+      height: 48px;
+    }
+    @include smScreen {
+      height: 24px;
+    }
+  }
+}
