@@ -1,5 +1,8 @@
-console.log('Hello!');
+const url = window.location.pathname;
 
-$(document).ready(() => {
-  console.log('HesSchool Hello!');
+$(".nav-link").each(function () {
+  $(this).removeClass("active");
+  if ($(this).attr("href") == url.split("/")[1]) {
+    $(this).addClass("active");
+  }
 });
