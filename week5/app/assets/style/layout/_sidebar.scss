@@ -15,8 +15,18 @@
 
 .nav-link {
   &.active {
-    color: $success;
-    border-left: 4px solid $success;
+    color: $primary;
+    position: relative;
+    &:before {
+        content: "";
+        background-color: $primary;
+        display: block;
+        width: 4px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
   }
   &:hover {
       background-color: $vague;
