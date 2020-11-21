@@ -1,12 +1,164 @@
 ---
-title: 首頁
+title: Admin
 layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
 
-<h1>
-  admin
-</h1>
+<div class="container">
+  <div class="d-flex justify-content-between align-items-center mb-7">
+    <div class="d-flex align-items-center">
+      <h1 class="h4 font-weight-bold mb-0 mr-7">Admin</h1>
+      <a href="#" class="font-weight-bold text-decoration-none" data-toggle="modal" data-target="#addAdmin">
+        <span class="material-icons text-primary align-bottom">add</span>
+        Add New Admin
+      </a>
+    </div>
+    <ul class="d-flex list-unstyled mb-0">
+      <li><a href=""><span class="material-icons align-middle mr-4">search</span></a></li>
+      <li><a href=""><span class="material-icons align-middle">notifications_active</span></a></li>
+    </ul>
+  </div>
 
-<div class="box"></div>
+  <table class="table table-hover mb-9">
+    <thead class="table-borderless">
+      <tr>
+        <th class="pb-0" scope="col">ID<a href=""><span class="material-icons text-primary align-middle ml-2">arrow_downward</span></a></th>
+        <th class="pb-0" scope="col">Name</th>
+        <th class="pb-0" scope="col">Email</th>
+        <th class="pb-0" scope="col" colspan="2">Verified</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="pl-0" scope="row">#1</th>
+        <td>Emir Wicks</td>
+        <td>emir.wicks@mail.com</td>
+        <td>Yes</td>
+        <td class="pr-0">
+          <ul class="d-flex justify-content-end list-unstyled mb-0">
+            <li><a href=""><span class="material-icons align-middle mr-4">visibility</span></a></li>
+            <li><a href=""><span class="material-icons align-middle">edit</span></a></li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td class="pl-0" scope="row">#2</th>
+        <td>Zaina Goldsmith</td>
+        <td>zaina.goldsmith@mail.com</td>
+        <td>Yes</td>
+        <td class="pr-0">
+          <ul class="d-flex justify-content-end list-unstyled mb-0">
+            <li><a href=""><span class="material-icons align-middle mr-4">visibility</span></a></li>
+            <li><a href=""><span class="material-icons align-middle">edit</span></a></li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td class="pl-0" scope="row">#3</th>
+        <td>Mahima Lopez</td>
+        <td>Mahima.Lopez@mail.com</td>
+        <td>Yes</td>
+        <td class="pr-0">
+          <ul class="d-flex justify-content-end list-unstyled mb-0">
+            <li><a href=""><span class="material-icons align-middle mr-4">visibility</span></a></li>
+            <li><a href=""><span class="material-icons align-middle">edit</span></a></li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td class="pl-0" scope="row">#4</th>
+        <td>Pharrell Murray</td>
+        <td>Pharrell.Murray@mail.com</td>
+        <td>Yes</td>
+        <td class="pr-0">
+          <ul class="d-flex justify-content-end list-unstyled mb-0">
+            <li><a href=""><span class="material-icons align-middle mr-4">visibility</span></a></li>
+            <li><a href=""><span class="material-icons align-middle">edit</span></a></li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td class="pl-0" scope="row">#5</th>
+        <td>Annika Mcbride</td>
+        <td>Annika.Mcbride@mail.com</td>
+        <td>Yes</td>
+        <td class="pr-0">
+          <ul class="d-flex justify-content-end list-unstyled mb-0">
+            <li><a href=""><span class="material-icons align-middle mr-4">visibility</span></a></li>
+            <li><a href=""><span class="material-icons align-middle">edit</span></a></li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td class="pl-0" scope="row">#6</th>
+        <td>Fatimah Clark</td>
+        <td>Fatimah.Clark@mail.com</td>
+        <td>Yes</td>
+        <td class="pr-0">
+          <ul class="d-flex justify-content-end list-unstyled mb-0">
+            <li><a href=""><span class="material-icons align-middle mr-4">visibility</span></a></li>
+            <li><a href=""><span class="material-icons align-middle">edit</span></a></li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td class="pl-0" scope="row">#7</th>
+        <td>Klaudia Rhodes</td>
+        <td>Klaudia.Rhodes@mail.com</td>
+        <td>Yes</td>
+        <td class="pr-0">
+          <ul class="d-flex justify-content-end list-unstyled mb-0">
+            <li><a href=""><span class="material-icons align-middle mr-4">visibility</span></a></li>
+            <li><a href=""><span class="material-icons align-middle">edit</span></a></li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td class="pl-0" scope="row">#8</th>
+        <td>Tillie Lucero</td>
+        <td>Tillie.Lucero@mail.com</td>
+        <td>Yes</td>
+        <td class="pr-0">
+          <ul class="d-flex justify-content-end list-unstyled mb-0">
+            <li><a href=""><span class="material-icons align-middle mr-4">visibility</span></a></li>
+            <li><a href=""><span class="material-icons align-middle">edit</span></a></li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td class="pl-0" scope="row">#9</th>
+        <td>Sabrina Stephenson</td>
+        <td>Sabrina.Stephenson@mail.com</td>
+        <td>Yes</td>
+        <td class="pr-0">
+          <ul class="d-flex justify-content-end list-unstyled mb-0">
+            <li><a href=""><span class="material-icons align-middle mr-4">visibility</span></a></li>
+            <li><a href=""><span class="material-icons align-middle">edit</span></a></li>
+          </ul>
+        </td>
+      </tr>
+      <tr class="border-bottom">
+        <td class="pl-0" scope="row">#10</th>
+        <td>Annie Smith</td>
+        <td>Annie.Smith@mail.com</td>
+        <td>Yes</td>
+        <td class="pr-0">
+          <ul class="d-flex justify-content-end list-unstyled mb-0">
+            <li><a href=""><span class="material-icons align-middle mr-4">visibility</span></a></li>
+            <li><a href=""><span class="material-icons align-middle">edit</span></a></li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <nav>
+    <ul class="pagination justify-content-end mb-5">
+      <li class="page-item"><a class="page-link border-primary py-1 px-2" href="#" aria-label="Previous"><span class="material-icons font-size-base align-middle">keyboard_arrow_left</span></a></li>
+      <li class="page-item active"><a class="page-link border-primary py-1 px-2" href="#">1</a></li>
+      <li class="page-item"><a class="page-link border-primary py-1 px-2" href="#">2</a></li>
+      <li class="page-item"><a class="page-link border-primary py-1 px-2" href="#">3</a></li>
+      <li class="page-item"><a class="page-link border-primary py-1 px-2" href="#" aria-label="Next"><span class="material-icons font-size-base align-middle">keyboard_arrow_right</span></a></li>
+    </ul>
+  </nav>
+</div>
