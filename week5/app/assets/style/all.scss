@@ -5,6 +5,8 @@
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/mixins";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "./component/dropdown";
 @import "./utilities/utilities";
 
-@import "./layout/sidebar"
+@import "./layout/sidebar";
+@import "./page/admin";

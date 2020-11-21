@@ -1,7 +1,29 @@
 .font-size-sm {
-    font-size: $font-size-sm;
+  font-size: $font-size-sm;
+}
+
+.font-size-md {
+  font-size: $font-size-md;
+}
+
+.font-size-lg {
+  font-size: $font-size-lg;
 }
 
 .font-size-base {
-    font-size: $font-size-base;
+  font-size: $font-size-base;
+}
+
+.modal-md {
+  max-width: 480px;
+}
+
+.icon-hover-primary {
+  &:hover {
+    color: $primary;
+  }
+}
+
+.rounded-xs {
+  border-radius: 2px;
 }

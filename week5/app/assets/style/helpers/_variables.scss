@@ -69,7 +69,7 @@ $secondary:     #EDF4EE !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
-$danger:        $red !default;
+$danger:        #E3006E !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
 $vague:         #CDDDCD !default;
@@ -286,6 +286,7 @@ $font-family-base:            $font-family-sans-serif !default;
 
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg:                $font-size-base * 1.25 !default;
+$font-size-md:                $font-size-base * 1.125 !default;
 $font-size-sm:                $font-size-base * .875 !default;
 
 $font-weight-lighter:         lighter !default;

@@ -1,0 +1,15 @@
+.addAdmin {
+  &:hover {
+    color: $primary;
+  }
+}
+
+.userModal-avatar {
+  width: 141px;
+  height: 141px;
+  object-fit: cover;
+}
+
+.profile {
+  width: 275px;
+}
