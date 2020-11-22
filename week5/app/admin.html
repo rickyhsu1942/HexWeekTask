@@ -41,7 +41,8 @@ current: index
           <ul class="d-flex justify-content-end list-unstyled mb-0">
             <li><a href="#" data-toggle="modal" data-target="#userModal"><span
                   class="icon-hover-primary material-icons align-middle mr-4">visibility</span></a></li>
-            <li><a href="#" data-toggle="modal" data-target="#editAdminModal"><span class="icon-hover-primary material-icons align-middle">edit</span></a></li>
+            <li><a href="#" data-toggle="modal" data-target="#editAdminModal"><span
+                  class="icon-hover-primary material-icons align-middle">edit</span></a></li>
           </ul>
         </td>
       </tr>
@@ -196,9 +197,8 @@ current: index
                 </div>
                 <div class="dropdown-items">
                   <div class="d-flex pt-5">
-                    <input type="button"
-                      class="font-weight-bold btn btn-outline-danger rounded-xs px-5 mr-3" data-dismiss="modal"
-                      value="Deactivate">
+                    <input type="button" class="font-weight-bold btn btn-outline-danger rounded-xs px-5 mr-3"
+                      data-dismiss="modal" value="Deactivate">
                     <input type="button" class="font-weight-bold btn btn-primary rounded-xs px-5" value="Edit"></div>
                 </div>
               </li>
@@ -213,13 +213,13 @@ current: index
   <div class="modal fade" id="addAdminModal" tabindex="-1" aria-labelledby="addAdminModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-md">
       <div class="modal-content rounded-sm">
-        <div class="modal-header border-0 pt-5 px-5">
+        <div class="modal-header border-0 py-5 px-5">
           <h5 class="modal-title h4 font-weight-bold" id="addAdminModalLabel">New Admin</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body px-5 pb-5">
+        <div class="modal-body px-5 pt-0 pb-5">
           <h4 class="font-size-lg font-weight-bold mb-3">Account</h4>
           <form action="">
             <label for="name" class="font-size-sm mb-1">Name</label>
@@ -269,32 +269,34 @@ current: index
 
   <!-- Modal-editAdmin -->
   <div class="modal fade" id="editAdminModal" tabindex="-1" aria-labelledby="editAdminModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-md">
+    <div class="modal-dialog modal-md modal-dialog-scrollable">
       <div class="modal-content rounded-sm">
-        <div class="modal-header border-0 pt-5 px-5">
-          <h5 class="modal-title h4 font-weight-bold" id="editAdminModalLabel">New Admin</h5>
+        <div class="modal-header px-5 py-5">
+          <h5 class="modal-title h4 font-weight-bold" id="editAdminModalLabel">Edit Admin</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body px-5 pb-5">
+        <div class="modal-body overflow-auto pt-0 pb-5 px-5">
           <h4 class="font-size-lg font-weight-bold mb-3">Account</h4>
           <form action="">
             <label for="name" class="font-size-sm mb-1">Name</label>
-            <input type="text" class="form-control rounded-xs mb-3" id="name" name="name" aria-label="Name">
+            <input type="text" class="form-control rounded-xs mb-3" id="name" name="name" aria-label="Name"
+              value="Emir Wicks" disabled>
             <label for="email" class="font-size-sm mb-1">Email</label>
-            <input type="text" class="form-control rounded-xs mb-3" id="email" name="email" aria-label="email">
+            <input type="text" class="form-control rounded-xs mb-3" id="email" name="email" aria-label="email"
+              value="emir.wicks@mail.com" disabled>
             <hr class="my-4">
             <h4 class="font-size-lg font-weight-bold mb-3">Verification</h4>
             <p class="font-weight-bold mb-3"><span
-                class="material-icons text-danger align-middle mr-2">warning</span>Unverified</p>
+                class="material-icons text-primary align-middle mr-2">check_circle</span>Verified</p>
             <input type="button"
               class="d-block w-100 font-weight-bold btn btn-outline-primary border-secondary rounded-xs py-3"
-              value="Send Verification Mail">
+              value="Send Verification Mail" disabled>
             <hr class="my-4">
             <label class="font-size-lg font-weight-bold mb-3 h4" for="accessLevel">Access Level</label>
             <select class="form-control rounded-xs border-dark" id="accessLevel">
-              <option class="text-gray">-Choose access level-</option>
+              <option class="text-gray">Admin</option>
             </select>
             <hr class="my-4">
             <h4 class="font-size-lg font-weight-bold mb-3">Custom Access</h4>
@@ -313,13 +315,21 @@ current: index
               <label class="form-check-label" for="setting">Setting</label></div>
             <div class="form-check mb-3"><input class="form-check-input" type="checkbox" name="customAccess"
                 id="taskMenu">
-              <label class="form-check-label" for="taskMenu">Task Menu</label></div>
+              <label class="form-check-label" for="taskMenu">Task Menu</label>
+            </div>
+            <hr class="my-4">
+            <h4 class="font-size-lg font-weight-bold mb-3">Deactivate Account</h4>
+            <p class="text-danger mb-3"><span class="material-icons text-danger align-middle mr-2">warning</span>This
+              cannot be undone!</p>
+            <input type="button"
+              class="d-block w-100 font-weight-bold btn btn-outline-danger border-danger rounded-xs py-3"
+              value="Deactivate This Account">
           </form>
         </div>
-        <div class="modal-footer border-0 px-5 py-3">
+        <div class="modal-footer px-5 py-3">
           <input type="button" class="font-weight-bold btn btn-outline-primary rounded-xs px-5 py-2 mr-3"
             data-dismiss="modal" value="Cancel">
-          <input type="submit" class="font-weight-bold btn btn-primary rounded-xs px-5 py-2" value="Add">
+          <input type="submit" class="font-weight-bold btn btn-primary rounded-xs px-5 py-2" value="Update">
         </div>
       </div>
     </div>
