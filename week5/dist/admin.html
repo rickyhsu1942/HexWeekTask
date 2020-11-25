@@ -215,17 +215,15 @@
       </tr>
     </tbody>
   </table>
-  <nav>
-    <ul class="pagination justify-content-end mb-5">
-      <li class="page-item"><a class="page-link border-primary py-1 px-2" href="#" aria-label="Previous"><span
-            class="material-icons font-size-base align-middle">keyboard_arrow_left</span></a></li>
-      <li class="page-item active"><a class="page-link border-primary py-1 px-2" href="#">1</a></li>
-      <li class="page-item"><a class="page-link border-primary py-1 px-2" href="#">2</a></li>
-      <li class="page-item"><a class="page-link border-primary py-1 px-2" href="#">3</a></li>
-      <li class="page-item"><a class="page-link border-primary py-1 px-2" href="#" aria-label="Next"><span
-            class="material-icons font-size-base align-middle">keyboard_arrow_right</span></a></li>
-    </ul>
-  </nav>
+  <ul class="pagination justify-content-end mb-5">
+    <li class="page-item"><a class="page-link border-primary py-1 px-2" href="#" aria-label="Previous"><span
+          class="material-icons font-size-base align-middle">keyboard_arrow_left</span></a></li>
+    <li class="page-item active"><a class="page-link border-primary py-1 px-2" href="#">1</a></li>
+    <li class="page-item"><a class="page-link border-primary py-1 px-2" href="#">2</a></li>
+    <li class="page-item"><a class="page-link border-primary py-1 px-2" href="#">3</a></li>
+    <li class="page-item"><a class="page-link border-primary py-1 px-2" href="#" aria-label="Next"><span
+          class="material-icons font-size-base align-middle">keyboard_arrow_right</span></a></li>
+  </ul>
 
   <!-- Modal-user -->
   <div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="userModalLabel"
@@ -281,10 +279,10 @@
         <div class="modal-body px-5 pt-0 pb-5">
           <h4 class="font-size-lg font-weight-bold mb-3">Account</h4>
           <form action="">
-            <label for="name" class="font-size-sm mb-1">Name</label>
-            <input type="text" class="form-control rounded-xs mb-3" id="name" name="name" aria-label="Name">
-            <label for="email" class="font-size-sm mb-1">Email</label>
-            <input type="text" class="form-control rounded-xs mb-3" id="email" name="email" aria-label="email">
+            <label for="add__name" class="font-size-sm mb-1">Name</label>
+            <input type="text" class="form-control rounded-xs mb-3" id="add__name" name="name" aria-label="Name">
+            <label for="add__email" class="font-size-sm mb-1">Email</label>
+            <input type="text" class="form-control rounded-xs mb-3" id="add__email" name="email" aria-label="email">
             <hr class="my-4">
             <h4 class="font-size-lg font-weight-bold mb-3">Verification</h4>
             <p class="font-weight-bold mb-3"><span
@@ -293,33 +291,33 @@
               class="d-block w-100 font-weight-bold btn btn-outline-primary border-secondary rounded-xs py-3"
               value="Send Verification Mail">
             <hr class="my-4">
-            <label class="font-size-lg font-weight-bold mb-3 h4" for="accessLevel">Access Level</label>
-            <select class="form-control rounded-xs border-dark" id="accessLevel">
+            <label class="font-size-lg font-weight-bold mb-3 h4" for="add__accessLevel">Access Level</label>
+            <select class="form-control rounded-xs border-dark" id="add__accessLevel">
               <option class="text-gray">-Choose access level-</option>
             </select>
             <hr class="my-4">
             <h4 class="font-size-lg font-weight-bold mb-3">Custom Access</h4>
             <div class="form-check mb-3">
-              <input class="form-check-input" type="checkbox" name="customAccess" id="lecture">
-              <label class="form-check-label" for="lecture">Lecture</label>
+              <input class="form-check-input" type="checkbox" name="customAccess" id="add__lecture">
+              <label class="form-check-label" for="add__lecture">Lecture</label>
             </div>
-            <div class="form-check mb-3"><input class="form-check-input" type="checkbox" name="customAccess"
-                id="coupon">
-              <label class="form-check-label" for="coupon">Coupon</label></div>
-            <div class="form-check mb-3"><input class="form-check-input" type="checkbox" name="customAccess"
-                id="message">
-              <label class="form-check-label" for="message">Message</label></div>
-            <div class="form-check mb-3"><input class="form-check-input" type="checkbox" name="customAccess"
-                id="setting">
-              <label class="form-check-label" for="setting">Setting</label></div>
-            <div class="form-check mb-3"><input class="form-check-input" type="checkbox" name="customAccess"
-                id="taskMenu">
-              <label class="form-check-label" for="taskMenu">Task Menu</label></div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" name="customAccess" id="add__coupon">
+              <label class="form-check-label" for="add__coupon">Coupon</label></div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" name="customAccess" id="add__message">
+              <label class="form-check-label" for="add__message">Message</label></div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" name="customAccess" id="add__setting">
+              <label class="form-check-label" for="add__setting">Setting</label></div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" name="customAccess" id="add__taskMenu">
+              <label class="form-check-label" for="add__taskMenu">Task Menu</label></div>
           </form>
         </div>
         <div class="modal-footer border-0 px-5 py-3">
-          <input type="button" class="font-weight-bold btn btn-outline-primary rounded-xs px-5 py-2 mr-3"
-            data-dismiss="modal" value="Cancel">
+          <button class="font-weight-bold btn btn-outline-primary rounded-xs px-5 py-2 mr-3"
+            data-dismiss="modal">Cancel</button>
           <input type="submit" class="font-weight-bold btn btn-primary rounded-xs px-5 py-2" value="Add">
         </div>
       </div>
@@ -339,11 +337,11 @@
         <div class="modal-body overflow-auto pt-0 pb-5 px-5">
           <h4 class="font-size-lg font-weight-bold mb-3">Account</h4>
           <form action="">
-            <label for="name" class="font-size-sm mb-1">Name</label>
-            <input type="text" class="form-control rounded-xs mb-3" id="name" name="name" aria-label="Name"
+            <label for="edit__name" class="font-size-sm mb-1">Name</label>
+            <input type="text" class="form-control rounded-xs mb-3" id="edit__name" name="name" aria-label="Name"
               value="Emir Wicks" disabled>
-            <label for="email" class="font-size-sm mb-1">Email</label>
-            <input type="text" class="form-control rounded-xs mb-3" id="email" name="email" aria-label="email"
+            <label for="edit__email" class="font-size-sm mb-1">Email</label>
+            <input type="text" class="form-control rounded-xs mb-3" id="edit__email" name="email" aria-label="email"
               value="emir.wicks@mail.com" disabled>
             <hr class="my-4">
             <h4 class="font-size-lg font-weight-bold mb-3">Verification</h4>
@@ -356,28 +354,28 @@
               class="d-block w-100 font-weight-bold btn btn-outline-primary border-secondary rounded-xs py-3"
               value="Send Verification Mail" disabled>
             <hr class="my-4">
-            <label class="font-size-lg font-weight-bold mb-3 h4" for="accessLevel">Access Level</label>
-            <select class="form-control rounded-xs border-dark" id="accessLevel">
+            <label class="font-size-lg font-weight-bold mb-3 h4" for="edit__accessLevel">Access Level</label>
+            <select class="form-control rounded-xs border-dark" id="edit__accessLevel">
               <option class="text-gray">Admin</option>
             </select>
             <hr class="my-4">
             <h4 class="font-size-lg font-weight-bold mb-3">Custom Access</h4>
             <div class="form-check mb-3">
-              <input class="form-check-input" type="checkbox" name="customAccess" id="lecture">
-              <label class="form-check-label" for="lecture">Lecture</label>
+              <input class="form-check-input" type="checkbox" name="customAccess" id="edit__lecture">
+              <label class="form-check-label" for="edit__lecture">Lecture</label>
             </div>
-            <div class="form-check mb-3"><input class="form-check-input" type="checkbox" name="customAccess"
-                id="coupon">
-              <label class="form-check-label" for="coupon">Coupon</label></div>
-            <div class="form-check mb-3"><input class="form-check-input" type="checkbox" name="customAccess"
-                id="message">
-              <label class="form-check-label" for="message">Message</label></div>
-            <div class="form-check mb-3"><input class="form-check-input" type="checkbox" name="customAccess"
-                id="setting">
-              <label class="form-check-label" for="setting">Setting</label></div>
-            <div class="form-check mb-3"><input class="form-check-input" type="checkbox" name="customAccess"
-                id="taskMenu">
-              <label class="form-check-label" for="taskMenu">Task Menu</label>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" name="customAccess" id="edit__coupon">
+              <label class="form-check-label" for="edit__coupon">Coupon</label></div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" name="customAccess" id="edit__message">
+              <label class="form-check-label" for="edit__message">Message</label></div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" name="customAccess" id="edit__setting">
+              <label class="form-check-label" for="edit__setting">Setting</label></div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" name="customAccess" id="edit__taskMenu">
+              <label class="form-check-label" for="edit__taskMenu">Task Menu</label>
             </div>
             <hr class="my-4">
             <h4 class="font-size-lg font-weight-bold mb-3">Deactivate Account</h4>
@@ -389,8 +387,8 @@
           </form>
         </div>
         <div class="modal-footer px-5 py-3">
-          <input type="button" class="font-weight-bold btn btn-outline-primary rounded-xs px-5 py-2 mr-3"
-            data-dismiss="modal" value="Cancel">
+          <button class="font-weight-bold btn btn-outline-primary rounded-xs px-5 py-2 mr-3"
+            data-dismiss="modal">Cancel</button>
           <input type="submit" class="font-weight-bold btn btn-primary rounded-xs px-5 py-2" value="Update">
         </div>
       </div>
