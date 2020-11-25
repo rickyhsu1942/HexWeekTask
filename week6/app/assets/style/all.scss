@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
-
 @import "../../../node_modules/bootstrap/scss/functions";
+@import "./helpers/reboot";
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/mixins";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 @import "./utilities/utilities";
 
+@import "./components/counter";
 
+@import "./layout/header";
