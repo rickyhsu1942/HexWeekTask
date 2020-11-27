@@ -129,7 +129,8 @@ $spacers: () !default;
 $spacers: map-merge((0: 0,
     1: ($spacer * 0.25),
     2: ($spacer * 0.5),
-    2_5: ($spacer * 0.875),
+    2_5: ($spacer * 0.75),
+    2_75: ($spacer * 0.875),
     3: $spacer,
     3_5: ($spacer *1.25),
     4: ($spacer * 1.5),
@@ -138,7 +139,9 @@ $spacers: map-merge((0: 0,
     6: ($spacer * 2.5),
     7: ($spacer * 3),
     8: ($spacer * 4),
+    8_125: ($spacer * 4.125),
     9: ($spacer * 5),
+    10: ($spacer * 6),
   ),
   $spacers);
 
@@ -281,6 +284,7 @@ $font-size-sm: $font-size-base * 0.875 !default;
 $font-weight-lighter: lighter !default;
 $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default;
 $font-weight-bold: 700 !default;
 $font-weight-bolder: bolder !default;
 

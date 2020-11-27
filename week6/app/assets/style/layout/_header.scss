@@ -12,10 +12,12 @@
   overflow: hidden;
   transition: all 0.8s;
   z-index: 120;
+
   & a {
     border: 1px solid $white;
     color: $white;
   }
+
   &.active {
     max-height: 320px;
   }
@@ -27,6 +29,7 @@
     position: static;
     width: auto;
     max-height: 100%;
+
     & a {
       border: none;
       color: $darkGray;

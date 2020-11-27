@@ -1,12 +1,24 @@
 .font-size-sm {
   font-size: $font-size-sm;
 }
+
 .font-size-base {
   font-size: $font-size-base;
 }
+
 .font-size-md {
   font-size: $font-size-md;
 }
+
 .font-size-lg {
   font-size: $font-size-lg;
+}
+
+.font-weight-medium {
+  font-weight: $font-weight-medium;
+}
+
+.absolute-bottom {
+  position: absolute;
+  bottom: 0;
 }
