@@ -14,11 +14,32 @@
   font-size: $font-size-lg;
 }
 
+.font-size-xl {
+  font-size: $font-size-xl;
+}
+
 .font-weight-medium {
   font-weight: $font-weight-medium;
+}
+
+.font-weight-semibold {
+  font-weight: $font-weight-semibold;
 }
 
 .absolute-bottom {
   position: absolute;
   bottom: 0;
+}
+
+.h-inherit {
+  height: inherit;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+}
+
+.text-decoration-line-through {
+  text-decoration-line: line-through;
 }
