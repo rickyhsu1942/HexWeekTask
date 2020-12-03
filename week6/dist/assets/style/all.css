@@ -11640,7 +11640,9 @@ a.text-darkGray:hover, a.text-darkGray:focus {
   height: inherit; }
 
 .bg-cover {
-  background-size: cover;
+  background-size: cover; }
+
+.bg-center {
   background-position: center; }
 
 .text-decoration-line-through {
