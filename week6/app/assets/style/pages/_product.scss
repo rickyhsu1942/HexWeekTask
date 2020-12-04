@@ -1,0 +1,7 @@
+.card-title-font {
+  font-size: $font-size-lg;
+
+  @include media-breakpoint-up(md) {
+    font-size: $font-size-xl;
+  }
+}
