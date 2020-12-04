@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title><%- title %></title>
+  <title>product</title>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <link rel="stylesheet" href="./assets/style/all.css" />
@@ -34,13 +34,10 @@
                 class="d-none d-md-inline material-icons align-middle font-size-md">store</span>Product</a>
           </li>
           <li class="order-2 order-md-0">
-            <% if (title == "mypage") { %>
-            <a class="d-block font-size-lg mr-md-5 mr-0 py-3" href="mypage.html"><span class="d-none d-md-inline material-icons align-middle
-                  font-size-md">person</span>Mypage</a>
-            <% } else { %>
+            
             <a class="d-block font-size-lg mr-md-5 mr-0 py-3" href="login.html"><span class="d-none d-md-inline material-icons align-middle
                 font-size-md">person</span>log in</a>
-            <% } %>
+            
           </li>
           <li>
             <a class="d-block font-size-lg mr-md-5 mr-0 py-3" href="#"><span
@@ -59,7 +56,7 @@
         </ul>
       </div>
     </div>
-    <% if (title != "index") { %>
+    
     <div class="bg-primary d-none d-md-block">
       <ul class="container d-flex list-unstyled mb-0">
         <li class="pr-2">
@@ -83,10 +80,11 @@
       </ul>
     </div>
   </header>
-  <% } %>
-  <%- contents %>
+  
+  
+<h1>product</h1>
 
-  <% if (title == "index" || title == "product") { %>
+  
   <div class="footer-banner">
     <div class="container">
       <div class="row">
@@ -103,7 +101,7 @@
       </div>
     </div>
   </div>
-  <% } %>
+  
 
   <footer class="bg-primary">
     <div class="container d-flex justify-content-between align-items-center">
