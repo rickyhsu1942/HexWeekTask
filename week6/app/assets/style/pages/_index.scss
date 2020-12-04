@@ -1,10 +1,21 @@
-.banner {
+.header-banner {
   background-image: url("../images/index1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 480px;
   @include media-breakpoint-up(md) {
     height: 870px;
+  }
+}
+
+.footer-banner {
+  background-image: url("../images/index10.jpg");
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: center;
+  height: 480px;
+  @include media-breakpoint-up(md) {
+    height: 600px;
   }
 }
 
@@ -56,4 +67,8 @@
     color: $white;
     background-color: rgba(0, 0, 0, 0.3);
   }
+}
+
+.recycling-img {
+  height: 520px;
 }

@@ -11639,6 +11639,9 @@ a.text-darkGray:hover, a.text-darkGray:focus {
 .h-inherit {
   height: inherit; }
 
+.h-auto {
+  height: auto; }
+
 .bg-cover {
   background-size: cover; }
 
@@ -11905,14 +11908,24 @@ a.text-darkGray:hover, a.text-darkGray:focus {
 .footer__logo {
   max-width: 128px; }
 
-.banner {
+.header-banner {
   background-image: url("../images/index1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 480px; }
   @media (min-width: 768px) {
-    .banner {
+    .header-banner {
       height: 870px; } }
+
+.footer-banner {
+  background-image: url("../images/index10.jpg");
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: center;
+  height: 480px; }
+  @media (min-width: 768px) {
+    .footer-banner {
+      height: 600px; } }
 
 .btn-light-hover-translucent {
   border: 2px solid #f8f9fa; }
@@ -11960,6 +11973,9 @@ a.text-darkGray:hover, a.text-darkGray:focus {
     font-weight: 600;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.3); }
+
+.recycling-img {
+  height: 520px; }
 
 .login__photo {
   height: 220px;
