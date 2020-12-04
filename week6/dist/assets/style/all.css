@@ -12114,6 +12114,14 @@ a.text-darkGray:hover, a.text-darkGray:focus {
 .border-2 {
   border-width: 2px; }
 
+@media (min-width: 768px) {
+  .position-md-absolute {
+    position: absolute; } }
+
+@media (min-width: 768px) {
+  .right-md-0 {
+    right: 0; } }
+
 .counter-stack[data-count]:after {
   position: absolute;
   right: 0%;
@@ -12439,6 +12447,9 @@ a.text-darkGray:hover, a.text-darkGray:focus {
   @media (min-width: 768px) {
     .card-title-font {
       font-size: 1.5rem; } }
+
+.h-460 {
+  height: 460px; }
 
 .login__photo {
   height: 220px;
