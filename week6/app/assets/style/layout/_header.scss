@@ -1,5 +1,12 @@
-.header__logo {
+.header__logo a {
+  background-image: url('../images/d’Perfume.png');
+  background-repeat: no-repeat;
+  background-position: center;
   max-width: 128px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  float: left;
 }
 
 .dropdown {

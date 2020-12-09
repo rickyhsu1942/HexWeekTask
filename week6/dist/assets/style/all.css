@@ -1,6 +1,10 @@
+@charset "UTF-8";
 img {
   max-width: 100%;
   height: auto; }
+
+a {
+  display: block; }
 
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
@@ -12076,11 +12080,20 @@ a.text-darkGray:hover, a.text-darkGray:focus {
 .font-size-xl {
   font-size: 1.5rem; }
 
+.font-size-xxl {
+  font-size: 2rem; }
+
+.font-size-xxxl {
+  font-size: 2.5rem; }
+
 .font-weight-medium {
   font-weight: 500; }
 
 .font-weight-semibold {
   font-weight: 600; }
+
+.list-position-inside {
+  list-style-position: inside; }
 
 .absolute-bottom {
   position: absolute;
@@ -12107,10 +12120,6 @@ a.text-darkGray:hover, a.text-darkGray:focus {
 .bg-center {
   background-position: center; }
 
-.text-decoration-line-through {
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through; }
-
 .border-2 {
   border-width: 2px; }
 
@@ -12121,6 +12130,12 @@ a.text-darkGray:hover, a.text-darkGray:focus {
 @media (min-width: 768px) {
   .right-md-0 {
     right: 0; } }
+
+.marker-font-size-xl li::marker {
+  font-size: 1.5rem; }
+
+.marker-font-weight-semibold li::marker {
+  font-size: 1.5rem; }
 
 .counter-stack[data-count]:after {
   position: absolute;
@@ -12344,8 +12359,15 @@ a.text-darkGray:hover, a.text-darkGray:focus {
     background: #8d8d8d;
     width: 100%; }
 
-.header__logo {
-  max-width: 128px; }
+.header__logo a {
+  background-image: url("../images/d’Perfume.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 128px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  float: left; }
 
 .dropdown {
   background-color: #8d8d8d;
