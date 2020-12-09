@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>login</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container position-relative">
+      <div class="d-flex justify-content-between align-items-center py-2">
+        <h1 class="header__logo"><a href="index.html">d’Perfume</a></h1>
+        <div class="d-flex d-md-none">
+          <a class="text-darkGray position-relative mr-3" href="#">
+            <span class="counter-stack" data-count="3">
+              <span class="material-icons align-middle font-size-lg mr-2">shopping_cart</span>
+            </span>
+          </a>
+
+          <a href="#" class="menu-icon text-darkGray"><span class="material-icons align-middle">table_rows</span></a>
+        </div>
+        <ul class="list-unstyled dropdown d-flex flex-column flex-md-row font-size-lg text-center mb-0">
+          <li>
+            <a class="font-size-lg mr-md-5 mr-0 py-3" href="product.html"><span
+                class="d-none d-md-inline material-icons align-middle font-size-md">store</span>Product</a>
+          </li>
+          <li class="order-2 order-md-0">
+            
+            <a class="font-size-lg mr-md-5 mr-0 py-3" href="login.html"><span class="d-none d-md-inline material-icons align-middle
+                font-size-md">person</span>log in</a>
+            
+          </li>
+          <li>
+            <a class="font-size-lg mr-md-5 mr-0 py-3" href="#"><span
+                class="d-none d-md-inline material-icons align-middle font-size-lg">favorite</span>Wishlist</a>
+          </li>
+          <li>
+            <a class="d-block d-md-none font-size-lg py-3" href="#">Blog</a>
+          </li>
+          <li>
+            <a class="d-block d-md-none font-size-lg py-3" href="#">Contact</a>
+          </li>
+          <li>
+            <a class="d-none d-md-block font-size-lg py-3" href="#"><span
+                class="material-icons align-middle font-size-lg">shopping_cart</span>Cart(3)</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="bg-primary d-none d-md-block">
+      <ul class="container d-flex list-unstyled mb-0">
+        <li class="pr-2">
+          <a href="#" class="text-white font-size-lg underline-light py-2">CHANEL</a>
+        </li>
+        <li class="px-2">
+          <a href="#" class="text-white font-size-lg underline-light py-2">Jo Malone</a>
+        </li>
+        <li class="px-2">
+          <a href="#" class="text-white font-size-lg underline-light py-2">Curology</a>
+        </li>
+        <li class="px-2">
+          <a href="#" class="text-white font-size-lg underline-light py-2">Dior</a>
+        </li>
+        <li class="px-2">
+          <a href="#" class="text-white font-size-lg underline-light py-2">Chloe</a>
+        </li>
+        <li class="pl-2">
+          <a href="#" class="text-white font-size-lg underline-light py-2">ZARA</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  
+  
+<div class="container py-6 py-md-9">
+    <div class="row align-items-center">
+        <img class="col-12 col-md-8 mb-4 mb-md-0 login__photo" src="./assets/images/login1.jpg" alt="">
+        <div class="col-12 col-md-4">
+            <h2 class="mb-2_5">Log in</h2>
+            <form action="mypage.html">
+                <div class="mb-3_5">
+                    <label class="mb-0" for="account">帳號</label>
+                    <input type="email" class="form-control" id="account" placeholder="email@example.com">
+                </div>
+                <div class="mb-5_5">
+                    <label class="mb-0" for="passwd">密碼</label>
+                    <input type="password" class="form-control" id="passwd" placeholder="Password">
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="font-weight-medium" href="#">忘記密碼</a>
+                    <div class="d-flex">
+                        <button class="btn btn-outline-primary mr-2">註冊</button>
+                        <input type="submit" class="btn btn-primary" value="登入">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+  
+
+  <footer class="bg-primary">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="mr-md-3_5" href="index.html">
+        <img class="footer__logo" src="./assets/images/d’Perfumewhite.png"
+          srcset="./assets/images/d’Perfumewhite.png 1x,./assets/images/d’Perfumewhite@2x.png 2x" alt="d’Perfume" />
+      </a>
+      <h6 class="font-size-sm font-weight-medium text-white py-5 mr-md-auto mb-0">© 2020. All Rights Reserved.</h6>
+      <ul class="list-unstyled d-none d-md-flex mb-0">
+        <li><a class="text-white font-size-lg mr-5_5" href="#">Product</a></li>
+        <li><a class="text-white font-size-lg mr-5_5" href="#">Blog</a></li>
+        <li><a class="text-white font-size-lg" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- custom JS -->
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

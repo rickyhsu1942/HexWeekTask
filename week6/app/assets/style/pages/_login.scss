@@ -1,8 +1,0 @@
-.login__photo {
-  height: 220px;
-  object-fit: cover;
-
-  @include media-breakpoint-up(md) {
-    height: 730px;
-  }
-}

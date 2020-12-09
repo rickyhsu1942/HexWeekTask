@@ -1,3 +1,0 @@
-@each $color, $value in $theme-colors {
-  @include underline-color-variant(".underline-#{$color}", $value);
-}
