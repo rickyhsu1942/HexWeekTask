@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%- title %></title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container d-flex justify-content-between py-4 py-md-6">
+      <span class="d-md-none d-block material-icons">dehaze</span>
+      <h1 class="logo m-0"><a href="index.html">Aloha</a></h1>
+      <div class="d-flex justify-content-between">
+        <span class="fs-6 material-icons">language</span>
+        <div class="d-none d-md-block dropdown">
+          <a class="dropdown-toggle text-dark mr-12" href="#" role="button" id="dropdownHeaderLanguage"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          </a>
+          <ul class="dropdown-menu text-dark" aria-labelledby="dropdownHeaderLanguage">
+            <li><a class="dropdown-item" href="#">English</a></li>
+            <li><a class="dropdown-item" href="#">繁體中文</a></li>
+          </ul>
+        </div>
+        <a class="d-none d-md-block mr-12 text-dark" href="">Sign up</a>
+        <a class="text-dark" href="">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <%- contents %>
+
+  <footer class="container d-block text-center d-md-flex py-6">
+    <ul class="d-flex justify-content-center justify-content-md-start order-md-1 ml-xl-0 ml-md-auto mb-4 mb-md-0">
+      <li class="mr-6"><a class="fs-2 text-darkGray" href="">FAQs</a></li>
+      <li class="mr-6"><a class="fs-2 text-darkGray" href="">Terms of use</a></li>
+      <li><a class="fs-2 text-darkGray" href="">Privacy policy</a></li>
+    </ul>
+
+    <span class="fs-2 mr-xl-16">© 2020 ALOHA, Inc. All rights reserved.</span>
+
+    <ul class="d-xl-flex d-none ml-auto order-md-2 mb-0">
+      <li class="d-flex mr-6">
+        <span class="fs-6 mr-2 material-icons">language</span>
+        <div class="d-none d-md-block dropdown align-text-top">
+          <a class="fs-2 dropdown-toggle text-dark" href="#" role="button" id="dropdownFooterLanguage"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English
+          </a>
+          <ul class="dropdown-menu text-dark" aria-labelledby="dropdownFooterLanguage">
+            <li><a class="dropdown-item" href="#">English</a></li>
+            <li><a class="dropdown-item" href="#">繁體中文</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="d-flex">
+        <span class="fs-6 mr-2 material-icons">attach_money</span>
+        <div class="d-none d-md-block dropdown align-text-top">
+          <a class="fs-2 dropdown-toggle text-dark d-inline" href="#" role="button" id="dropdownFooterMoney"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TWD
+          </a>
+          <ul class="dropdown-menu text-dark" aria-labelledby="dropdownFooterMoney">
+            <li><a class="dropdown-item" href="#">TWD</a></li>
+            <li><a class="dropdown-item" href="#">USD</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </footer>
+
+  <!-- bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- custom JS -->
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
