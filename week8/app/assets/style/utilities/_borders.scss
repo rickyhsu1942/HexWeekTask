@@ -1,0 +1,6 @@
+@each $size,
+$length in $roundeds {
+  .rounded-#{$size} {
+    border-radius: $length !important;
+  }
+}

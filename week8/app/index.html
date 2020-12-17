@@ -4,6 +4,54 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
-<div class="bg-primary">
-  <h1 class="text-light">index</h1>
+<!-- Slider main container -->
+<div class="swiper-container">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <div class="header-banner bgi-center bgi-cover bgi-repeat-none position-relative"
+        style="background-image: url('/assets/images/index-banner.jpg');">
+        <div class="bg-dark h-inherit opacity-50 position-absolute left-0 right-0">
+        </div>
+        <div class="d-flex justify-content-center h-inherit align-items-center position-absolute left-0 right-0">
+          <h2 class="mb-0 fs-7 fs-md-9 font-weight-bold text-light text-center w-75 w-md-50">Discover your ideal hotel
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="header-banner bgi-center bgi-cover bgi-repeat-none position-relative"
+        style="background-image: url('/assets/images/fire.jpg');">
+        <div class="bg-dark h-inherit opacity-50 position-absolute left-0 right-0">
+        </div>
+        <div class="d-flex justify-content-center h-inherit align-items-center position-absolute left-0 right-0">
+          <h2 class="mb-0 fs-7 fs-md-9 font-weight-bold text-light text-center w-75 w-md-50">Nothing here</h2>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="header-banner bgi-top bgi-cover bgi-repeat-none position-relative"
+        style="background-image: url('/assets/images/bird.png');">
+        <div class="bg-dark h-inherit opacity-50 position-absolute left-0 right-0">
+        </div>
+        <div class="d-flex justify-content-center h-inherit align-items-center position-absolute left-0 right-0">
+          <h2 class="mb-0 fs-7 fs-md-9 font-weight-bold text-light text-center w-75 w-md-50">Still nothing here</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-button-prev text-light fs-9 left-5 left-lg-15"></div>
+  <div class="swiper-button-next text-light fs-9 right-5 right-lg-15"></div>
+</div>
+<div class="container top-40 left-0 right-0 position-absolute aaa">
+  <div class="row">
+    <nav class="col-10 rounded-2 bg-secondary navbar navbar-light bg-light ml-auto mr-auto">
+      <a class="navbar-brand">Navbar</a>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </nav>
+  </div>
 </div>

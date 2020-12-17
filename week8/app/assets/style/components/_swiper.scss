@@ -1,0 +1,13 @@
+.swiper-button-prev {
+  &::after {
+    font-family: "Material Icons";
+    content: 'keyboard_arrow_left';
+  }
+}
+
+.swiper-button-next {
+  &::after {
+    font-family: "Material Icons";
+    content: 'keyboard_arrow_right';
+  }
+}

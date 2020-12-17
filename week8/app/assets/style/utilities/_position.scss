@@ -1,0 +1,24 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @for $i from 0 through 20 {
+      .top#{$infix}-#{$i*5} {
+        top: ($i*5) * 1%;
+      }
+
+      .bottom#{$infix}-#{$i*5} {
+        bottom: ($i*5) * 1%;
+      }
+
+      .right#{$infix}-#{$i*5} {
+        right: ($i*5) * 1%;
+      }
+
+      .left#{$infix}-#{$i*5} {
+        left: ($i*5) * 1%;
+      }
+
+    }
+  }
+}
