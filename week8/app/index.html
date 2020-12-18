@@ -44,13 +44,54 @@ current: index
   <div class="swiper-button-prev text-light fs-9 left-5 left-lg-15"></div>
   <div class="swiper-button-next text-light fs-9 right-5 right-lg-15"></div>
 </div>
-<div class="container top-40 left-0 right-0 position-absolute aaa">
+
+<div class="container nav-search left-0 right-0 position-absolute zindex-nav">
   <div class="row">
-    <nav class="col-10 rounded-2 bg-secondary navbar navbar-light bg-light ml-auto mr-auto">
-      <a class="navbar-brand">Navbar</a>
-      <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    <nav class="col-10 rounded-2 bg-secondary bg-secondary ml-auto mr-auto py-6">
+      <form class="form-inline justify-content-between" action="search.html">
+
+        <div
+          class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon bg-light col-12 col-xl-3 mb-4 mb-xl-0 pl-4">
+          <i aria-hidden="true" class="material-icons mdc-text-field__icon pr-2">location_on</i>
+          <input class="mdc-text-field__input" autocorrect="off" autocomplete="off" spellcheck="false"
+            id="demo-mdc-text-field" maxlength="524288">
+          <div class="mdc-notched-outline mdc-notched-outline--upgraded">
+            <div class="mdc-notched-outline__leading border-0"></div>
+            <div class="mdc-notched-outline__notch border-0">
+              <label for="demo-mdc-text-field" class="mdc-floating-label">Destination</label>
+            </div>
+            <div class="mdc-notched-outline__trailing border-0"></div>
+          </div>
+        </div>
+
+        <div
+          class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon bg-light col-12 col-xl-3 mb-4 mb-xl-0 pl-4">
+          <i aria-hidden="true" class="material-icons mdc-text-field__icon pr-2">date_range</i>
+          <input class="mdc-text-field__input" autocorrect="off" autocomplete="off" spellcheck="false"
+            id="demo-mdc-text-field" maxlength="524288">
+          <div class="mdc-notched-outline mdc-notched-outline--upgraded">
+            <div class="mdc-notched-outline__leading border-0"></div>
+            <div class="mdc-notched-outline__notch border-0">
+              <label for="demo-mdc-text-field" class="mdc-floating-label">Check-in / Check-out</label>
+            </div>
+            <div class="mdc-notched-outline__trailing border-0"></div>
+          </div>
+        </div>
+
+        <div
+          class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon bg-light col-12 col-xl-3 mb-4 mb-xl-0 pl-4">
+          <i aria-hidden="true" class="material-icons mdc-text-field__icon pr-2">person</i>
+          <input class="mdc-text-field__input" autocorrect="off" autocomplete="off" spellcheck="false"
+            id="demo-mdc-text-field" maxlength="524288">
+          <div class="mdc-notched-outline mdc-notched-outline--upgraded">
+            <div class="mdc-notched-outline__leading border-0"></div>
+            <div class="mdc-notched-outline__notch border-0">
+              <label for="demo-mdc-text-field" class="mdc-floating-label">Guests</label>
+            </div>
+            <div class="mdc-notched-outline__trailing border-0"></div>
+          </div>
+        </div>
+        <input type="submit" class="btn btn-primary font-weight-bold ff-OpenSans col-12 col-xl-2 py-4" value="SEARCH">
       </form>
     </nav>
   </div>

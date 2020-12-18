@@ -6,3 +6,7 @@ var swiper = new Swiper('.swiper-container', {
         prevEl: '.swiper-button-prev',
       },
 });
+
+const textFields = [].map.call(document.querySelectorAll('.mdc-text-field'), function(el) {
+  return new mdc.textField.MDCTextField(el);
+});
