@@ -1,13 +1,26 @@
-.swiper-button-prev {
+.swiper-banner-button-prev {
   &::after {
     font-family: "Material Icons";
     content: 'keyboard_arrow_left';
+    font-size: 48px;
   }
 }
 
-.swiper-button-next {
+.swiper-banner-button-next {
   &::after {
     font-family: "Material Icons";
     content: 'keyboard_arrow_right';
+    font-size: 48px;
+  }
+}
+
+.swiper-cards-button-next {
+  &::after {
+    font-family: "Material Icons";
+    content: 'keyboard_arrow_right';
+    padding: 8px;
+    border-radius: 50%;
+    background-color: $secondary;
+    font-size: 24px;
   }
 }

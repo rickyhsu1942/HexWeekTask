@@ -5,7 +5,7 @@ engine: ejs
 current: index
 ---
 <!-- Slider main container -->
-<div class="swiper-container">
+<div class="swiper-banner swiper-container">
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
@@ -41,13 +41,13 @@ current: index
       </div>
     </div>
   </div>
-  <div class="swiper-button-prev text-light fs-9 left-5 left-lg-15"></div>
-  <div class="swiper-button-next text-light fs-9 right-5 right-lg-15"></div>
+  <div class="swiper-button-prev swiper-banner-button-prev text-light left-5 left-lg-15"></div>
+  <div class="swiper-button-next swiper-banner-button-next text-light right-5 right-lg-15"></div>
 </div>
 
 <div class="container nav-search left-0 right-0 position-absolute zindex-nav">
   <div class="row">
-    <nav class="col-10 rounded-2 bg-secondary bg-secondary ml-auto mr-auto py-6">
+    <nav class="col-11 col-md-10 rounded-2 bg-secondary bg-secondary ml-auto mr-auto py-6">
       <form class="form-inline justify-content-between" action="search.html">
 
         <div
@@ -96,3 +96,102 @@ current: index
     </nav>
   </div>
 </div>
+
+<div class="pt-78 pt-xl-30 container">
+  <h2 class="font-weight-bold mb-6 fs-md-7 fs-6">Top Choices</h2>
+  <nav class="mb-6">
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <a class="nav-link fs-5 fs-md-6 font-weight-bold px-4 px-md-6 active" id="nav-home-tab" data-toggle="tab"
+        href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Bali<sup>128</sup></a>
+      <a class="nav-link fs-5 fs-md-6 font-weight-bold px-4 px-md-6" id="nav-profile-tab" data-toggle="tab"
+        href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Okinawa<sup>67</sup></a>
+      <a class="nav-link fs-5 fs-md-6 font-weight-bold px-4 px-md-6" id="nav-contact-tab" data-toggle="tab"
+        href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Taipei<sup>53</sup></a>
+    </div>
+  </nav>
+
+  <div class="tab-content mb-xl-18 mb-12" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+      <!-- Slider main container -->
+      <div class="swiper-cards swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="card ff-OpenSans border-0">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week8/top1.jpg" class="card-img-top rounded-2">
+              <div class="card-body px-0">
+                <h5 class="card-title font-weight-bold fs-3 fs-3">Hotel Aqua</h5>
+                <div class="d-flex align-items-center mb-2 text-nowrap">
+                  <span class="material-icons fs-4">star</span>
+                  <span class="material-icons fs-4">star</span>
+                  <span class="material-icons fs-4">star</span>
+                  <span class="material-icons fs-4">star</span>
+                  <span class="material-icons fs-4 mr-1">star</span>
+                  <span class="text-darkGray fs-2">5.0</span>
+                  <span class="text-gray fs-1">・2k reviews</span>
+                </div>
+                <p class="card-text text-darkGray fs-2">TWD 2,480 <del class="text-gray fs-1">TWD 3,980</del></p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card ff-OpenSans border-0">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week8/top2.jpg" class="card-img-top rounded-2">
+              <div class="card-body px-0">
+                <h5 class="card-title font-weight-bold fs-3">Mr. Kawasaki Inn</h5>
+                <div class="d-flex align-items-center mb-2 text-nowrap">
+                  <span class="material-icons fs-4">star</span>
+                  <span class="material-icons fs-4">star</span>
+                  <span class="material-icons fs-4">star</span>
+                  <span class="material-icons fs-4 mr-1">star</span>
+                  <span class="text-darkGray fs-2">4.0</span>
+                  <span class="text-gray fs-1">・500 reviews</span>
+                </div>
+                <p class="card-text text-darkGray fs-2">TWD 3,380</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card ff-OpenSans border-0">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week8/top3.jpg" class="card-img-top rounded-2">
+              <div class="card-body px-0">
+                <h5 class="card-title font-weight-bold fs-3">Weekly Paradise</h5>
+                <div class="d-flex align-items-center mb-2 text-nowrap">
+                  <span class="material-icons fs-4">star</span>
+                  <span class="material-icons fs-4">star</span>
+                  <span class="material-icons fs-4">star</span>
+                  <span class="material-icons fs-4 mr-1">star</span>
+                  <span class="text-darkGray fs-2">4.0</span>
+                  <span class="text-gray fs-1">・470 reviews</span>
+                </div>
+                <p class="card-text text-darkGray fs-2">TWD 4,780</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card ff-OpenSans border-0">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week8/top4.jpg" class="card-img-top rounded-2">
+              <div class="card-body px-0">
+                <h5 class="card-title font-weight-bold fs-3">Beast Hotel</h5>
+                <div class="d-flex align-items-center mb-2 text-nowrap">
+                  <span class="material-icons fs-4">star</span>
+                  <span class="material-icons fs-4">star</span>
+                  <span class="material-icons fs-4">star</span>
+                  <span class="material-icons fs-4 mr-1">star</span>
+                  <span class="text-darkGray fs-2">4.0</span>
+                  <span class="text-gray fs-1">・283 reviews</span>
+                </div>
+                <p class="card-text text-darkGray fs-2">TWD 1,980</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-next swiper-cards-button-next d-none d-md-flex text-dark"></div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Okinawa</div>
+    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Taipei</div>
+  </div>

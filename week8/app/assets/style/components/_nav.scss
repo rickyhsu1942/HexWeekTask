@@ -1,0 +1,15 @@
+.nav-tabs {
+  border-width: 0;
+}
+
+.nav-tabs .nav-link.active,
+.nav-link:hover {
+  border-width: 0;
+  border-bottom: 2px solid $primary;
+  color: $primary;
+}
+
+.nav-tabs .nav-link {
+  color: $darkGray;
+  border-bottom: 1px solid #dee2e6;
+}
