@@ -1,4 +1,25 @@
-.card-img-top {
-  height: 175px;
+.card-img-sm-top {
+  height: 164px;
   object-fit: cover;
+
+  @include media-breakpoint-up(sm) {
+    height: 185px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    height: 175px;
+  }
+}
+
+.card-img-md-top {
+  height: 181px;
+  object-fit: cover;
+
+  @include media-breakpoint-up(sm) {
+    height: 158px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    height: 263px;
+  }
 }

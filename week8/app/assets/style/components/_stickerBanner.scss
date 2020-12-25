@@ -1,0 +1,26 @@
+.stickerBanner {
+  height: 78px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.stickerBanner-grandients {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  height: inherit;
+  border-radius: 0.5rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.stickerBanner-body {
+  height: inherit;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
