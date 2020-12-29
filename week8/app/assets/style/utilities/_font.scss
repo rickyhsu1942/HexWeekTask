@@ -2,27 +2,30 @@
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
+    // font-size
     @each $size,
     $length in $font-sizes {
       .fs#{$infix}-#{$size} {
         font-size: $length !important;
       }
     }
+
+    // font-weight
+    @each $key,
+    $value in $font-weights {
+      .font-weight#{$infix}-#{$key} {
+        font-weight: $value !important;
+      }
+    }
+
   }
 }
 
+// font-family
 .ff-Roboto {
   font-family: "Roboto", sans-serif;
 }
 
 .ff-OpenSans {
   font-family: "Open Sans", sans-serif;
-}
-
-.font-weight-medium {
-  font-weight: $font-weight-medium;
-}
-
-.font-weight-semibold {
-  font-weight: $font-weight-semibold;
 }

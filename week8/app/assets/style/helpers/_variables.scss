@@ -150,6 +150,7 @@ $spacers: map-merge((0: 0,
     12: ($spacer * 3),
     16: ($spacer * 4),
     18: ($spacer * 4.5),
+    23: ($spacer * 5.75),
     30: ($spacer * 7.5),
     78: ($spacer * 19.5)),
   $spacers);
@@ -319,9 +320,20 @@ $font-weight-normal: 400 !default;
 $font-weight-medium: 500 !default;
 $font-weight-semibold: 600 !default;
 $font-weight-bold: 700 !default;
+$font-weight-extrabold: 750 !default;
 $font-weight-bolder: bolder !default;
 
 $font-weight-base: $font-weight-normal !default;
+
+$font-weights: () !default;
+$font-weights: map-merge(("light": $font-weight-light,
+    "normal": $font-weight-normal,
+    "medium": $font-weight-medium,
+    "semibold": $font-weight-semibold,
+    "bold": $font-weight-bold,
+    "extrabold": $font-weight-extrabold),
+  $font-weights);
+
 $line-height-base: 1.5 !default;
 
 $h1-font-size: $font-size-base * 2.5 !default;
