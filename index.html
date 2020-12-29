@@ -4,250 +4,449 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>index</title>
+  <title>ALOHA</title>
 
+  <!-- material -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!-- custom -->
   <link rel="stylesheet" href="./assets/style/all.css" />
 </head>
 
 <body>
-  <header>
-    <div class="container position-relative">
-      <div class="d-flex justify-content-between align-items-center py-2">
-        <h1 class="header__logo"><a href="index.html">d’Perfume</a></h1>
-        <div class="d-flex d-md-none">
-          <a class="text-darkGray position-relative mr-3" href="#">
-            <span class="counter-stack" data-count="3">
-              <span class="material-icons align-middle font-size-lg mr-2">shopping_cart</span>
-            </span>
+  <header class="sticky-top bg-light">
+    <div class="container d-flex justify-content-between py-4 py-md-6">
+      <span class="d-md-none d-block material-icons">dehaze</span>
+      <h1 class="logo m-0"><a href="index.html">Aloha</a></h1>
+      <div class="d-flex justify-content-between">
+        <span class="fs-6 material-icons">language</span>
+        <div class="d-none d-md-block dropdown">
+          <a class="dropdown-toggle text-dark mr-12" href="#" role="button" id="dropdownHeaderLanguage"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           </a>
-
-          <a href="#" class="menu-icon text-darkGray"><span class="material-icons align-middle">table_rows</span></a>
+          <ul class="dropdown-menu text-dark" aria-labelledby="dropdownHeaderLanguage">
+            <li><a class="dropdown-item" href="#">English</a></li>
+            <li><a class="dropdown-item" href="#">繁體中文</a></li>
+          </ul>
         </div>
-        <ul class="list-unstyled dropdown d-flex flex-column flex-md-row font-size-lg text-center mb-0">
-          <li>
-            <a class="font-size-lg mr-md-5 mr-0 py-3" href="product.html"><span
-                class="d-none d-md-inline material-icons align-middle font-size-md">store</span>Product</a>
-          </li>
-          <li class="order-2 order-md-0">
-            
-            <a class="font-size-lg mr-md-5 mr-0 py-3" href="login.html"><span class="d-none d-md-inline material-icons align-middle
-                font-size-md">person</span>log in</a>
-            
-          </li>
-          <li>
-            <a class="font-size-lg mr-md-5 mr-0 py-3" href="#"><span
-                class="d-none d-md-inline material-icons align-middle font-size-lg">favorite</span>Wishlist</a>
-          </li>
-          <li>
-            <a class="d-block d-md-none font-size-lg py-3" href="#">Blog</a>
-          </li>
-          <li>
-            <a class="d-block d-md-none font-size-lg py-3" href="#">Contact</a>
-          </li>
-          <li>
-            <a class="d-none d-md-block font-size-lg py-3" href="#"><span
-                class="material-icons align-middle font-size-lg">shopping_cart</span>Cart(3)</a>
-          </li>
-        </ul>
+        <a class="d-none d-md-block mr-12 text-dark ff-Roboto" href="">Sign up</a>
+        <a class="text-dark ff-Roboto" href="">Login</a>
       </div>
     </div>
-    
-  
-<div class="header-banner">
-  <div class="container h-inherit">
-    <div class="row h-inherit justify-content-end align-items-center">
-      <div class="col-12 col-md-5">
-        <h2 data-aos="fade-down" class="text-light font-size-xxxl font-weight-bold">Perfume
-          your day</h2>
-        <p data-aos="fade-down" data-aos-delay="800" data-aos-duration="1500"
-          class="font-size-lg text-light text-justify">A perfume is like
-          a piece of clothing, a
-          message, a way of
-          presenting oneself
-          a costume
-          that according to the
-          person who wears it.</p>
-        <a data-aos="fade-down" data-aos-delay="2000" data-aos-duration="1500" href="product.html"
-          class="btn btn-outline-light btn-light-hover-translucent rounded-pill font-size-xl col-md-9">Shop
-          now</a>
+  </header>
+
+  <!-- Slider main container -->
+<div class="swiper-banner swiper-container">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <div class="header-banner bgi-center bgi-cover bgi-repeat-none position-relative"
+        style="background-image: url('/assets/images/index-banner.jpg');">
+        <div class="bg-dark h-inherit opacity-50 position-absolute left-0 right-0">
+        </div>
+        <div class="d-flex justify-content-center h-inherit align-items-center position-absolute left-0 right-0">
+          <h2 class="mb-0 fs-7 fs-md-9 font-weight-bold text-light text-center w-75 w-md-50">Discover your ideal hotel
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="header-banner bgi-center bgi-cover bgi-repeat-none position-relative"
+        style="background-image: url('/assets/images/fire.jpg');">
+        <div class="bg-dark h-inherit opacity-50 position-absolute left-0 right-0">
+        </div>
+        <div class="d-flex justify-content-center h-inherit align-items-center position-absolute left-0 right-0">
+          <h2 class="mb-0 fs-7 fs-md-9 font-weight-bold text-light text-center w-75 w-md-50">Nothing here</h2>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="header-banner bgi-top bgi-cover bgi-repeat-none position-relative"
+        style="background-image: url('/assets/images/bird.png');">
+        <div class="bg-dark h-inherit opacity-50 position-absolute left-0 right-0">
+        </div>
+        <div class="d-flex justify-content-center h-inherit align-items-center position-absolute left-0 right-0">
+          <h2 class="mb-0 fs-7 fs-md-9 font-weight-bold text-light text-center w-75 w-md-50">Still nothing here</h2>
+        </div>
       </div>
     </div>
   </div>
+  <div class="swiper-button-prev swiper-banner-button-prev text-light left-5 left-lg-15"></div>
+  <div class="swiper-button-next swiper-banner-button-next text-light right-5 right-lg-15"></div>
 </div>
 
-<ul class="list-unstyled container py-6 py-md-7_75">
-  <li class="row no-gutters flex-md-row-reverse">
-    <div class="col-12 col-md-6 mb-2 mb-md-0">
-      <div class="square-img bg-cover" style="background-image: url('./assets/images/index2.jpg');"></div>
-    </div>
-    <div class="col-12 col-md-6 d-md-flex align-items-md-center justify-content-md-center">
-      <div class="col-12 col-md-8 mb-5 mb-md-0">
-        <h2 data-aos="fade-down" class="font-weight-bold">Gabrielle CHANEL</h2>
-        <div data-aos="fade-up" data-aos-delay="800" data-aos-duration="1500">
-          <p>
-            全新嗅覺體驗，花香四溢、明亮馥郁。結合茉莉、依蘭依蘭、橙花和最迷人的格拉斯晚香玉之花香，呈現出夢幻花香氣息。極具女性特質的香奈兒嘉柏麗香水，專為光芒四射的她而生。</p>
-          <a href="#" class="text-primary font-weight-semibold">查看更多</a>
-        </div>
-      </div>
-    </div>
-  </li>
-  <li class="row no-gutters">
-    <div class="col-12 col-md-6 mb-2 mb-md-0">
-      <div class="square-img bg-cover" style="background-image: url('./assets/images/index3.png');"></div>
-    </div>
-    <div class="col-12 col-md-6 d-md-flex align-items-md-center justify-content-md-center">
-      <div class="col-12 col-md-8 mb-5 mb-md-0">
-        <h2 data-aos="fade-down" class="font-weight-bold">Five O’clock Au Gingembre</h2>
-        <div data-aos="fade-up" data-aos-delay="800" data-aos-duration="1500">
-          <p>
-            生薑與溫醇的肉桂香、紅糖的香甜摻和成一氣，溫暖微辛的氣息反倒形成一股輕煙氤氳開來，還帶點微微煙醺感漫溢在整個鼻息之間，細聞之下,又還有溫溫淡淡的木香，溫和而暖心。</p>
-          <a href="#" class="text-primary font-weight-semibold">查看更多</a>
-        </div>
-      </div>
-    </div>
-  </li>
-  <li class="row no-gutters flex-md-row-reverse">
-    <div class="col-12 col-md-6 mb-2 mb-md-0">
-      <div class="square-img bg-cover" style="background-image: url('./assets/images/index4.jpg');"></div>
-    </div>
-    <div class="col-12 col-md-6 d-md-flex align-items-md-center justify-content-md-center">
-      <div class="col-12 col-md-8 mb-5 mb-md-0">
-        <h2 data-aos="fade-down" class="font-weight-bold">CHANEL N°5</h2>
-        <div data-aos="fade-up" data-aos-delay="800" data-aos-duration="1500">
-          <p>
-            N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。</p>
-          <a href="#" class="text-primary font-weight-semibold">查看更多</a>
-        </div>
-      </div>
-    </div>
-  </li>
-  <li class="row no-gutters">
-    <div class="col-12 col-md-6 mb-2 mb-md-0">
-      <div class="w1h2-img bg-cover" style="background-image: url('./assets/images/index5.jpg');"></div>
-    </div>
-    <div class="col-12 col-md-6 d-md-flex align-items-md-center justify-content-md-center">
-      <div class="no-gutters col-12 col-md-8 mb-3_5 mb-md-0">
-        <ol class="list-position-inside marker-font-size-xl marker-font-weight-semibold col-md-12">
-          <li data-aos="fade-down" class="mb-3_5 mb-md-7_25">
-            <h4>Levels of Preventive<br /> Maintenance Compliance</h4>
-            <p class="mb-0">The core idea of
-              preventative maintenance is the performance of proactive actions against
-              unscheduled
-              downtime in order to identify potential defects before they evolve into something more severe.</p>
-          </li>
-          <li data-aos="fade-down" class="mb-3_5 mb-md-7_25">
-            <h4>Percentage of Planned<br /> Maintenance</h4>
-            <p class="mb-0">The planned maintenance
-              percentage is the total planned maintenance time in your CMMS
-              software over a
-              date range over the total number of hours of a service performed by the technicians.</p>
-          </li>
-          <li data-aos="fade-down" class="mb-3_5 mb-md-7_75">
-            <h4>Critical percentage of<br /> planned maintenance</h4>
-            <p class="mb-0">Calculating the critical
-              percentage of planned maintenance will help you prioritize the most
-              important
-              operations that should be performed immediately.</p>
-          </li>
-        </ol>
-        <a data-aos="fade-up"
-          class="col-md-12 btn btn-outline-dark btn-dark-hover-translucent rounded-pill font-size-xl col-md-9"
-          href="">Plan a free online training</a>
-      </div>
-    </div>
-  </li>
-</ul>
+<div class="container nav-search left-0 right-0 position-absolute zindex-nav">
+  <div class="row">
+    <nav class="col-11 col-md-10 rounded-2 bg-secondary bg-secondary ml-auto mr-auto py-6">
+      <form class="form-inline justify-content-between" action="search.html">
 
-<div class="bg-lightGray">
-  <div class="container py-5 py-md-6">
-    <ul class="row list-unstyled">
-      <li data-aos="fade-up" class="card border-0 bg-lightGray col-12 col-md-4 mb-5 mb-md-0">
-        <div class="product-img bg-cover bg-center" style="background-image: url('./assets/images/index6.jpg');"></div>
-        <div class="card-body px-0 pt-2 col-md-12">
-          <h4 class="card-title mb-0">Poppy & Barley</h4>
-          <p class="font-weight-light mb-1 mb-md-3">Jo Malone</p>
-          <span class="font-weight-light mr-2">NT$1,380</span>
-          <span class="font-weight-light text-darkGray text-decoration-line-through">NT$1,580</span>
-        </div>
-      </li>
-      <li data-aos="fade-up" data-aos-delay="800" class="card border-0 bg-lightGray col-12 col-md-4 mb-5 mb-md-0">
-        <div class="product-img bg-cover bg-center" style="background-image: url('./assets/images/index7.jpg');"></div>
-        <div class="card-body px-0 pt-2 col-md-12">
-          <h4 class="card-title mb-0">Body Wash</h4>
-          <p class="font-weight-light mb-1 mb-md-3">Curology</p>
-          <span class="font-weight-light">NT$1,580</span>
-        </div>
-      </li>
-      <li data-aos="fade-up" data-aos-delay="1600" class="card border-0 bg-lightGray col-12 col-md-4">
-        <div class="product-img bg-cover bg-center soldout"
-          style="background-image: url('./assets/images/index8.jpg');"></div>
-        <div class="card-body px-0 pt-2 col-md-12">
-          <h4 class="card-title mb-0">Apple Cider Vinegar Capsule</h4>
-          <p class="font-weight-light mb-1 mb-md-3">Tonik</p>
-          <span class="font-weight-light">NT$1,580</span>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
-
-<div class="container py-6 py-md-7_75">
-  <div class="row align-items-center">
-    <div class="col-12 col-md-8 mb-2 mb-md-0">
-      <div class="recycling-img bg-cover bg-center" style="background-image: url('./assets/images/index9.jpg');"></div>
-    </div>
-    <div class="col-12 col-md-4">
-      <h2 data-aos="fade-down" class="font-weight-bold">Bottle-Recycling</h2>
-      <div data-aos="fade-up" data-aos-delay="800" data-aos-duration="1500">
-        <p class="font-size-lg mb-2 mb-md-3">Recycle your used empty bottles and be rewarded!</p>
-        <p class="mb-2 mb-md-3">For the past 10 years, we have collected over 800,000 bottles through Empty Bottle
-          Recycling Campaign and
-          planted more than 860 pine trees for a better environment.For the past 10 years, we have collected over
-          800,000
-          bottles through Empty Bottle Recycling Campaign and planted more than 860 pine trees for a better environment.
-        </p>
-        <a href="#" class="text-primary font-weight-semibold">查看更多</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-  
-  <div class="footer-banner">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-4" data-aos="fade-right">
-          <label for="moreInfo-email"
-            class="text-darkGray font-size-xxl font-weight-semibold mb-3_5">記得<br />訂閱以獲取更多資訊！</label>
-          <div class="input-group mb-3">
-            <input id="moreInfo-email" type="text" class="form-control border-2 border-primary py-md-2_5 h-auto"
-              placeholder="Your email address">
-            <div class="input-group-append">
-              <button class="btn btn-primary px-3 py-2_5" type="button" id="button-addon2">Subscribe</button>
+        <div
+          class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon bg-light col-12 col-xl-3 mb-4 mb-xl-0 pl-4">
+          <i aria-hidden="true" class="material-icons mdc-text-field__icon pr-2">location_on</i>
+          <input class="mdc-text-field__input" autocorrect="off" autocomplete="off" spellcheck="false"
+            id="demo-mdc-text-field" maxlength="524288">
+          <div class="mdc-notched-outline mdc-notched-outline--upgraded">
+            <div class="mdc-notched-outline__leading border-0"></div>
+            <div class="mdc-notched-outline__notch border-0">
+              <label for="demo-mdc-text-field" class="mdc-floating-label">Destination</label>
             </div>
+            <div class="mdc-notched-outline__trailing border-0"></div>
+          </div>
+        </div>
+
+        <div
+          class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon bg-light col-12 col-xl-3 mb-4 mb-xl-0 pl-4">
+          <i aria-hidden="true" class="material-icons mdc-text-field__icon pr-2">date_range</i>
+          <input class="mdc-text-field__input" autocorrect="off" autocomplete="off" spellcheck="false"
+            id="demo-mdc-text-field" maxlength="524288">
+          <div class="mdc-notched-outline mdc-notched-outline--upgraded">
+            <div class="mdc-notched-outline__leading border-0"></div>
+            <div class="mdc-notched-outline__notch border-0">
+              <label for="demo-mdc-text-field" class="mdc-floating-label">Check-in / Check-out</label>
+            </div>
+            <div class="mdc-notched-outline__trailing border-0"></div>
+          </div>
+        </div>
+
+        <div
+          class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon bg-light col-12 col-xl-3 mb-4 mb-xl-0 pl-4">
+          <i aria-hidden="true" class="material-icons mdc-text-field__icon pr-2">person</i>
+          <input class="mdc-text-field__input" autocorrect="off" autocomplete="off" spellcheck="false"
+            id="demo-mdc-text-field" maxlength="524288">
+          <div class="mdc-notched-outline mdc-notched-outline--upgraded">
+            <div class="mdc-notched-outline__leading border-0"></div>
+            <div class="mdc-notched-outline__notch border-0">
+              <label for="demo-mdc-text-field" class="mdc-floating-label">Guests</label>
+            </div>
+            <div class="mdc-notched-outline__trailing border-0"></div>
+          </div>
+        </div>
+        <input type="submit" class="btn btn-primary font-weight-bold ff-OpenSans col-12 col-xl-2 py-4" value="SEARCH">
+      </form>
+    </nav>
+  </div>
+</div>
+
+<!-- Top Choices -->
+<div class="pt-78 pt-xl-30 container">
+  <h2 class="font-weight-bold mb-6 fs-md-7 fs-6">Top Choices</h2>
+  <nav class="mb-6">
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <a class="nav-link fs-5 fs-md-6 font-weight-bold px-4 px-md-6 active" id="nav-home-tab" data-toggle="tab"
+        href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Bali<sup>128</sup></a>
+      <a class="nav-link fs-5 fs-md-6 font-weight-bold px-4 px-md-6" id="nav-profile-tab" data-toggle="tab"
+        href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Okinawa<sup>67</sup></a>
+      <a class="nav-link fs-5 fs-md-6 font-weight-bold px-4 px-md-6" id="nav-contact-tab" data-toggle="tab"
+        href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Taipei<sup>53</sup></a>
+    </div>
+  </nav>
+
+  <div class="tab-content mb-xl-18 mb-12" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+      <!-- Slider main container -->
+      <div class="swiper-cards swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="card ff-OpenSans border-0">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week8/top1.jpg"
+                class="card-img-sm-top rounded-2">
+              <div class="card-body px-0">
+                <h5 class="card-title font-weight-bold fs-3 fs-3">Hotel Aqua</h5>
+                <div class="d-flex align-items-center mb-2 text-nowrap">
+                  <span class="material-icons fs-4">star</span>
+                  <span class="material-icons fs-4">star</span>
+                  <span class="material-icons fs-4">star</span>
+                  <span class="material-icons fs-4">star</span>
+                  <span class="material-icons fs-4 mr-1">star</span>
+                  <span class="text-darkGray fs-2">5.0</span>
+                  <span class="text-gray fs-1">・2k reviews</span>
+                </div>
+                <p class="card-text text-darkGray fs-2">TWD 2,480 <del class="text-gray fs-1">TWD 3,980</del></p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card ff-OpenSans border-0">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week8/top2.jpg"
+                class="card-img-sm-top rounded-2">
+              <div class="card-body px-0">
+                <h5 class="card-title font-weight-bold fs-3">Mr. Kawasaki Inn</h5>
+                <div class="d-flex align-items-center mb-2 text-nowrap">
+                  <span class="material-icons fs-4">star</span>
+                  <span class="material-icons fs-4">star</span>
+                  <span class="material-icons fs-4">star</span>
+                  <span class="material-icons fs-4 mr-1">star</span>
+                  <span class="text-darkGray fs-2">4.0</span>
+                  <span class="text-gray fs-1">・500 reviews</span>
+                </div>
+                <p class="card-text text-darkGray fs-2">TWD 3,380</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card ff-OpenSans border-0">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week8/top3.jpg"
+                class="card-img-sm-top rounded-2">
+              <div class="card-body px-0">
+                <h5 class="card-title font-weight-bold fs-3">Weekly Paradise</h5>
+                <div class="d-flex align-items-center mb-2 text-nowrap">
+                  <span class="material-icons fs-4">star</span>
+                  <span class="material-icons fs-4">star</span>
+                  <span class="material-icons fs-4">star</span>
+                  <span class="material-icons fs-4 mr-1">star</span>
+                  <span class="text-darkGray fs-2">4.0</span>
+                  <span class="text-gray fs-1">・470 reviews</span>
+                </div>
+                <p class="card-text text-darkGray fs-2">TWD 4,780</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card ff-OpenSans border-0">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week8/top4.jpg"
+                class="card-img-sm-top rounded-2">
+              <div class="card-body px-0">
+                <h5 class="card-title font-weight-bold fs-3">Beast Hotel</h5>
+                <div class="d-flex align-items-center mb-2 text-nowrap">
+                  <span class="material-icons fs-4">star</span>
+                  <span class="material-icons fs-4">star</span>
+                  <span class="material-icons fs-4">star</span>
+                  <span class="material-icons fs-4 mr-1">star</span>
+                  <span class="text-darkGray fs-2">4.0</span>
+                  <span class="text-gray fs-1">・283 reviews</span>
+                </div>
+                <p class="card-text text-darkGray fs-2">TWD 1,980</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-next swiper-cards-button-next d-none d-md-flex text-dark"></div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Okinawa</div>
+    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Taipei</div>
+  </div>
+</div>
+
+<!-- Popular Destinations -->
+<div class="container mb-10 mb-md-6">
+  <h2 class="fs-6 fs-md-7 font-weight-bold mb-6">Popular Destinations</h2>
+  <div class="row">
+    <div class="col-xl-4 col-md-6 col-12 mb-2 mb-md-6">
+      <div class="stickerBanner" style="background-image: url('/assets/images/Osaka.jpg');">
+        <div class="stickerBanner-grandients"></div>
+        <div class="stickerBanner-body d-flex justify-content-between align-items-center">
+          <ul class="mb-0">
+            <li>
+              <h5 class="mb-0 fs-1 font-weight-bold text-gray">JAPAN</h5>
+            </li>
+            <li>
+              <h4 class="mb-0 fs-6 font-weight-bold text-light">Osaka</h4>
+            </li>
+          </ul>
+          <a href="#" class="material-icons fs-6 text-light">keyboard_arrow_down</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-md-6 col-12 mb-2 mb-md-6">
+      <div class="stickerBanner" style="background-image: url('/assets/images/Kyoto.jpg');">
+        <div class="stickerBanner-grandients"></div>
+        <div class="stickerBanner-body d-flex justify-content-between align-items-center">
+          <ul class="mb-0">
+            <li>
+              <h5 class="mb-0 fs-1 font-weight-bold text-gray">JAPAN</h5>
+            </li>
+            <li>
+              <h4 class="mb-0 fs-6 font-weight-bold text-light">Kyoto</h4>
+            </li>
+          </ul>
+          <a href="#" class="material-icons fs-6 text-light">keyboard_arrow_down</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-md-6 col-12 mb-2 mb-md-6">
+      <div class="stickerBanner" style="background-image: url('/assets/images/Reykjavic.jpg');">
+        <div class="stickerBanner-grandients"></div>
+        <div class="stickerBanner-body d-flex justify-content-between align-items-center">
+          <ul class="mb-0">
+            <li>
+              <h5 class="mb-0 fs-1 font-weight-bold text-gray">ICELAND</h5>
+            </li>
+            <li>
+              <h4 class="mb-0 fs-6 font-weight-bold text-light">Reykjavík</h4>
+            </li>
+          </ul>
+          <a href="#" class="material-icons fs-6 text-light">keyboard_arrow_down</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-md-6 col-12 mb-2 mb-md-6">
+      <div class="stickerBanner" style="background-image: url('/assets/images/Paris.jpg');">
+        <div class="stickerBanner-grandients"></div>
+        <div class="stickerBanner-body d-flex justify-content-between align-items-center">
+          <ul class="mb-0">
+            <li>
+              <h5 class="mb-0 fs-1 font-weight-bold text-gray">FRANCE</h5>
+            </li>
+            <li>
+              <h4 class="mb-0 fs-6 font-weight-bold text-light">Paris</h4>
+            </li>
+          </ul>
+          <a href="#" class="material-icons fs-6 text-light">keyboard_arrow_down</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-md-6 col-12 mb-2 mb-md-6">
+      <div class="stickerBanner" style="background-image: url('/assets/images/Roman.jpg');">
+        <div class="stickerBanner-grandients"></div>
+        <div class="stickerBanner-body d-flex justify-content-between align-items-center">
+          <ul class="mb-0">
+            <li>
+              <h5 class="mb-0 fs-1 font-weight-bold text-gray">ITALY</h5>
+            </li>
+            <li>
+              <h4 class="mb-0 fs-6 font-weight-bold text-light">Roma</h4>
+            </li>
+          </ul>
+          <a href="#" class="material-icons fs-6 text-light">keyboard_arrow_down</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-md-6 col-12 mb-2 mb-md-6">
+      <div class="stickerBanner" style="background-image: url('/assets/images/Bangkok.jpg');">
+        <div class="stickerBanner-grandients"></div>
+        <div class="stickerBanner-body d-flex justify-content-between align-items-center">
+          <ul class="mb-0">
+            <li>
+              <h5 class="mb-0 fs-1 font-weight-bold text-gray">THAILAND</h5>
+            </li>
+            <li>
+              <h4 class="mb-0 fs-6 font-weight-bold text-light">Bangkok</h4>
+            </li>
+          </ul>
+          <a href="#" class="material-icons fs-6 text-light">keyboard_arrow_down</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Get Inspiration -->
+<div class="container mb-12 mb-xl-18">
+  <div class="d-flex align-items-center justify-content-between mb-6">
+    <h2 class="fs-6 fs-md-7 font-weight-bold mb-0">Get Inspiration</h2>
+    <button class="btn btn-outline-primary ff-OpenSans fs-2 font-weight-bold px-4 py-2">SEE MORE</button>
+  </div>
+
+  <!-- Slider main container -->
+  <div class="swiper-md-cards swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="card ff-OpenSans border-0">
+          <img src="https://hexschool.github.io/webLayoutTraining1st/week8/italy.jpg" class="card-img-md-top rounded-2">
+          <div class="card-body px-0 pt-5 pt-md-6">
+            <h5 class="card-title font-weight-bold fs-5 fs-md-6 mb-2">The Fifth Most Visited Country</h5>
+            <p class="card-text text-darkGray fs-1 fs-md-3 ff-OpenSans">Italy is the fifth most visited country in the
+              world,
+              with a total
+              of 52.3 million…</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card ff-OpenSans border-0">
+          <img src="https://hexschool.github.io/webLayoutTraining1st/week8/Thailand.jpg"
+            class="card-img-md-top rounded-2">
+          <div class="card-body px-0 pt-5 pt-md-6">
+            <h5 class="card-title font-weight-bold fs-5 fs-md-6 mb-2">Visit Thailand for Bangkok</h5>
+            <p class="card-text text-darkGray fs-1 fs-md-3 ff-OpenSans">Asian tourists primarily visit Thailand for
+              Bangkok and
+              the
+              historical, natural, and…</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card ff-OpenSans border-0">
+          <img src="https://hexschool.github.io/webLayoutTraining1st/week8/NewZealand.jpg"
+            class="card-img-md-top rounded-2">
+          <div class="card-body px-0 pt-5 pt-md-6">
+            <h5 class="card-title font-weight-bold fs-5 fs-md-6 mb-2">Lord of the Rings Tour</h5>
+            <p class="card-text text-darkGray fs-1 fs-md-3 ff-OpenSans">The national cuisine has been described as
+              Pacific Rim,
+              incorporating the native Māori…</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
+</div>
 
-  <footer class="bg-primary">
-    <div class="container d-flex justify-content-between align-items-center">
-      <a class="mr-md-3_5" href="index.html">
-        <img class="footer__logo" src="./assets/images/d’Perfumewhite.png"
-          srcset="./assets/images/d’Perfumewhite.png 1x,./assets/images/d’Perfumewhite@2x.png 2x" alt="d’Perfume" />
-      </a>
-      <h6 class="font-size-sm font-weight-medium text-white py-5 mr-md-auto mb-0">© 2020. All Rights Reserved.</h6>
-      <ul class="list-unstyled d-none d-md-flex mb-0">
-        <li><a class="text-white font-size-lg mr-5_5" href="#">Product</a></li>
-        <li><a class="text-white font-size-lg mr-5_5" href="#">Blog</a></li>
-        <li><a class="text-white font-size-lg" href="#">Contact</a></li>
-      </ul>
+<!-- Subscribe for Exclusive Offer -->
+<div class="bg-secondary">
+  <div class="container py-6 py-md-23">
+    <div class="row">
+      <h3 class="col-12 text-center fs-6 fs-md-9 font-weight-bold font-weight-md-extrabold mb-4 mb-md-6">Subscribe for
+        Exclusive Offer</h3>
     </div>
+    <div class="row justify-content-center">
+      <form class="col-12 col-md-10 col-xl-6 input-group" action="">
+        <input type="email" class="form-control ff-OpenSans h-auto" placeholder="Your email address" id="subEmail">
+        <div class="input-group-append">
+          <input class="btn btn-primary ff-OpenSans font-weight-bold px-8 py-4" type="submit" value="SUBSCRIBE">
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+  <footer class="container d-block text-center d-md-flex py-6">
+    <ul class="d-flex justify-content-center justify-content-md-start order-md-1 ml-xl-0 ml-md-auto mb-4 mb-md-0">
+      <li class="mr-6"><a class="fs-2 ff-OpenSans text-darkGray" href="">FAQs</a></li>
+      <li class="mr-6"><a class="fs-2 ff-OpenSans text-darkGray" href="">Terms of use</a></li>
+      <li><a class="fs-2 ff-OpenSans text-darkGray" href="">Privacy policy</a></li>
+    </ul>
+
+    <span class="fs-2 ff-OpenSans mr-xl-16">© 2020 ALOHA, Inc. All rights reserved.</span>
+
+    <ul class="d-xl-flex d-none ml-auto order-md-2 mb-0">
+      <li class="d-flex mr-6">
+        <span class="fs-6 mr-2 material-icons">language</span>
+        <div class="d-none d-md-block dropdown align-text-top">
+          <a class="fs-2 ff-OpenSans dropdown-toggle text-dark" href="#" role="button" id="dropdownFooterLanguage"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English
+          </a>
+          <ul class="dropdown-menu text-dark" aria-labelledby="dropdownFooterLanguage">
+            <li><a class="dropdown-item ff-OpenSans" href="#">English</a></li>
+            <li><a class="dropdown-item ff-OpenSans" href="#">繁體中文</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="d-flex">
+        <span class="fs-6 mr-2 material-icons">attach_money</span>
+        <div class="d-none d-md-block dropdown align-text-top">
+          <a class="fs-2 ff-OpenSans dropdown-toggle text-dark d-inline" href="#" role="button" id="dropdownFooterMoney"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TWD
+          </a>
+          <ul class="dropdown-menu text-dark" aria-labelledby="dropdownFooterMoney">
+            <li><a class="dropdown-item ff-OpenSans" href="#">TWD</a></li>
+            <li><a class="dropdown-item ff-OpenSans" href="#">USD</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
   </footer>
+
   <!-- bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
@@ -260,6 +459,10 @@
   </script>
   <!-- AOS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- swiper -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- material -->
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
   <!-- custom JS -->
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
